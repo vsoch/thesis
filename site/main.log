@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=latex 2016.7.29)  29 JUL 2016 20:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=latex 2016.7.29)  29 JUL 2016 20:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1463,13 +1463,9 @@ Package natbib Warning: Citation `Salimi-Khorshidi2009-if' on page 11 undefined
 [11] [12
 
 ]
-
-LaTeX Warning: File `images/figure12.png' not found on input line 410.
-
-l.410 --- TeX4ht warning --- File `images/figure12.png' not found ---
 l.410 --- TeX4ht warning --- Cannot determine size of graphic in images/figure1
-2.png (no BoundingBox) ---
-l. 410 --- needs --- images/figure12.png ---
+2.jpg (no BoundingBox) ---
+l. 410 --- needs --- images/figure12.jpg ---
 [13
 
 ]
@@ -2610,10 +2606,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3386.
  ) 
 Here is how much of TeX's memory you used:
- 13285 strings out of 495021
- 182283 string characters out of 6181350
+ 13287 strings out of 495021
+ 182300 string characters out of 6181350
  418157 words of memory out of 5000000
- 16141 multiletter control sequences out of 15000+600000
+ 16142 multiletter control sequences out of 15000+600000
  45853 words of font info for 43 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  37i,14n,44p,3210b,855s stack positions out of 5000i,500n,10000p,200000b,80000s
