@@ -143,7 +143,7 @@ if len(zips) != 0:
         # check for htlatex
         if check_install() == True:
             print_error("Generating HTML, please wait!") 
-            os.system('htlatex %s "html,index=2,3,next,frames"' %(tex_file))
+            os.system('htlatex %s "html,index=2,next,frames"' %(tex_file))
             # Generate index.html for github pages
             output_file = tex_file.replace(".tex",".html")
             index = get_index_template("site/%s" %output_file)   
