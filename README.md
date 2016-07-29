@@ -1,7 +1,7 @@
 Thesis HTML Generator
 ====================
 
-This simple Dockerfile will take an Overleaf extracted thesis (a zip file with some main.tex file, images, etc.) and use [hdlatex](http://tug.org/tex4ht/) (and [docs](img/guari.pdf)) to render a simple HTML view for reading the thesis. The installation of latex, etc. and the generation of the static files is done via Docker so the user does not need to worry about installing dependencies. The idea is that if you fork the repo, you can then push the files to your gh-pages branch and **wha-la** you have your thesis as a simple website for sharing!
+This simple Dockerfile will take an Overleaf extracted thesis (a zip file with some main.tex file, images, etc.) and use [hdlatex](http://tug.org/tex4ht/) (and [docs](https://github.com/vsoch/thesis/raw/master/img/gurari.pdf)) to render a simple HTML view for reading the thesis. The installation of latex, etc. and the generation of the static files is done via Docker so the user does not need to worry about installing dependencies. The idea is that if you fork the repo, you can then push the files to your gh-pages branch and **wha-la** you have your thesis as a simple website for sharing!
 
 ### Instructions
 
@@ -12,7 +12,7 @@ First, fork the repo to your Github by clicking on the fork button. Then clone t
       
 Next, you need to download your thesis in zip format from Overleaf. They have a nice button to do this:
 
-![overleaf](img/overleaf.png)
+![overleaf](https://github.com/vsoch/thesis/raw/master/img/overleaf.png)
 
 You should plop it in this folder, making sure to delete mine (if I've included it in the repo, I maybe haven't until I properly submit it!). The script will find your thesis based on it having the `.zip` extension. If you don't have a zip file, it's going to get angry at you.
 
@@ -20,8 +20,9 @@ Then, you need to run the Docker image. You can either build it locally, or run 
 
       docker build -t vanessa/thesis .
 
-Now we are going to run the docker image, and map the local folder to it so that the generated files pop up in our present working directory. You can just run the script [generate.sh](generate.sh) to start the container, map the the present working directory, generate the site, and stop the container:
+Now we are going to run the docker image, and map the local folder to it so that the generated files pop up in our present working directory. You can just run the script [generate.sh](generate.sh) to start the container, map the the present working directory, generate the site, and stop the container. To make life easier, if you plan to put the thesis on the gh-pages associated with the repo, I'd check out that branch first:
 
+      git checkout -b gh-pages
       chmod u+x generate.sh
       bash generate.sh
 
@@ -121,9 +122,12 @@ What is really happening? Here are the basic commands. In a nutshell, we are sta
 This means that the entire generation of the site (and all the software needed to do it) is installed and run in the container, and we get to see and keep the output. Pretty neat!
 
 ### Output
-You will see new files in your present working directory, namely an `index.html` that redirects to the main content of your thesis in the `site` folder. In the `site` folder is a simple version of your thesis, in html form, with all the images and links as they should be. Then you simple need to add these files to a github pages branch.
+You will see new files in your present working directory, namely an `index.html` that redirects to the main content of your thesis in the `site` folder. In the `site` folder is a simple version of your thesis, in html form, with all the images and links as they should be. Then you simple need to add these files to a github pages branch. If you haven't yet, checkout a new gh-pages branch
 
       git checkout -b gh-pages
+
+If you're already on it, skip the above, and just add the site files to the gh-pages branch:
+
       git add site/
       git add index.html
       git push origin gh-pages
