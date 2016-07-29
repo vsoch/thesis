@@ -1,7 +1,7 @@
 Thesis HTML Generator
 ====================
 
-This simple Dockerfile will take an Overleaf extracted thesis (a zip file with some main.tex file, images, etc.) and use [hdlatex](http://tug.org/tex4ht/) (and [docs](img/guari.pdf)) to render a simple HTML view for reading the thesis. The installation of latex, etc. and the generation of the static files is done via Docker so the user does not need to worry about installing dependencies. The idea is that if you fork the repo, you can then push the files to your gh-pages branch and **wha-la** you have your thesis as a simple website for sharing!
+This simple Dockerfile will take an Overleaf extracted thesis (a zip file with some main.tex file, images, etc.) and use [hdlatex](http://tug.org/tex4ht/) (and [docs](https://github.com/vsoch/thesis/raw/master/img/gurari.pdf)) to render a simple HTML view for reading the thesis. The installation of latex, etc. and the generation of the static files is done via Docker so the user does not need to worry about installing dependencies. The idea is that if you fork the repo, you can then push the files to your gh-pages branch and **wha-la** you have your thesis as a simple website for sharing!
 
 ### Instructions
 
@@ -12,7 +12,7 @@ First, fork the repo to your Github by clicking on the fork button. Then clone t
       
 Next, you need to download your thesis in zip format from Overleaf. They have a nice button to do this:
 
-![overleaf](img/overleaf.png)
+![overleaf](https://github.com/vsoch/thesis/raw/master/img/overleaf.png)
 
 You should plop it in this folder, making sure to delete mine (if I've included it in the repo, I maybe haven't until I properly submit it!). The script will find your thesis based on it having the `.zip` extension. If you don't have a zip file, it's going to get angry at you.
 
