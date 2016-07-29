@@ -11,6 +11,7 @@ RUN apt-get update --fix-missing -qq -y \
     texlive-math-extra \
     texlive-latex-extra \
     texlive-fonts-extra \
+    tex4ht \
     curl \
     wget \  
     git \
@@ -23,10 +24,10 @@ RUN apt-get update --fix-missing -qq -y \
 RUN pip install pokemon
 RUN pip install beautifulsoup4
 
-RUN mkdir /sites
-WORKDIR /site
-ADD . /site/
+RUN mkdir /code
+WORKDIR /code
+ADD . /code/
 
-RUN chmod u+x /site/generate.sh
-CMD /site/generate.sh
+RUN chmod u+x /code/generate.sh
+CMD python /code/generate.py
 EXPOSE 3031
