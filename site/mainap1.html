@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>A Standardizing behavioral experimentation</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,index=2,3,next,frames --> 
+<meta name="src" content="main.tex"> 
+<meta name="date" content="2016-07-29 20:29:00"> 
+<link rel="stylesheet" type="text/css" href="main.css"> 
+</head><body 
+>
+   <!--l. 1747--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse16.html" >next</a>] [<a 
+href="mainch4.html" >prev</a>] [<a 
+href="mainch4.html#tailmainch4.html" >prev-tail</a>] [<a 
+href="#tailmainap1.html">tail</a>] [<a 
+href="main3.html#mainap1.html" >up</a>] </p></div>
+   <h2 class="appendixHead"><span class="titlemark">Appendix&#x00A0;A</span><br /><a 
+ id="x29-76000A"></a>Standardizing behavioral experimentation</h2>
+<!--l. 1749--><p class="noindent" >In this chapter, I describe development of a novel infrastructure to develop and deploy experimental
+paradigms ([<span 
+class="ec-lmbx-10">? </span>]). I begin with a description of the goals of this research, followed by a detailed technical
+report of all components of the software.
+<!--l. 1753--><p class="indent" >   The Experiment Factory is an open source framework for the development and deployment of
+web-based experiments ([<span 
+class="ec-lmbx-10">? </span>]). The modular infrastructure includes experiments, virtual machines for local
+or cloud deployment, and an application to drive these components and provide developers with
+functions and tools for further extension. I have released this infrastructure with a deployment
+(<a 
+href="http://www.expfactory.org" >http://www.expfactory.org</a>) that my lab, the Poldrack Lab, is currently using to deploy a set of over
+80&#x00A0;standardized&#x00A0;web-based experiments to Amazon Mechanical Turk. By providing open source tools for
+both deployment and development, this novel infrastructure holds promise to bring reproducibility to the
+administration of web-based experiments, and accelerate scientific progress by providing a shared
+community resource of psychological paradigms.
+   <div class="sectionTOCS">
+   &#x00A0;<span class="sectionToc" >A.1 <a 
+href="mainse16.html#x30-77000A.1">Experimental definition and capturing of behavior</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.1.1 <a 
+href="mainse16.html#x30-78000A.1.1">Modern behavioral experimentation</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.1.2 <a 
+href="mainse16.html#x30-79000A.1.2">Open source infrastructure to measure behavior</a></span>
+<br />   &#x00A0;<span class="sectionToc" >A.2 <a 
+href="mainse17.html#x31-80000A.2">The Experiment Factory</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.2.1 <a 
+href="mainse17.html#x31-81000A.2.1">The Experiment Factory Use Cases</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.2.2 <a 
+href="mainse17.html#x31-86000A.2.2">Development of Experiments and Infrastructure</a></span>
+<br />   &#x00A0;<span class="sectionToc" >A.3 <a 
+href="mainse18.html#x32-89000A.3">The Experiment Factory Infrastructure</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.3.1 <a 
+href="mainse18.html#x32-90000A.3.1">The Experiment Factory Software</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.3.2 <a 
+href="mainse18.html#x32-91000A.3.2">The Experiment Factory Experiments</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.3.3 <a 
+href="mainse18.html#x32-92000A.3.3">Experiment Factory Battery</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.3.4 <a 
+href="mainse18.html#x32-93000A.3.4">Experiment Factory Docker</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.3.5 <a 
+href="mainse18.html#x32-94000A.3.5">Experiment Factory VM</a></span>
+<br />   &#x00A0;<span class="sectionToc" >A.4 <a 
+href="mainse19.html#x33-95000A.4">Design and Implementation Choices</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.4.1 <a 
+href="mainse19.html#x33-96000A.4.1">Modular Framework for Open Science</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.4.2 <a 
+href="mainse19.html#x33-97000A.4.2">Software testing for the Experiment Factory</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.4.3 <a 
+href="mainse19.html#x33-98000A.4.3">The Cognitive Atlas</a></span>
+<br />   &#x00A0;<span class="sectionToc" >A.5 <a 
+href="mainse20.html#x34-99000A.5">Discussion</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.5.1 <a 
+href="mainse20.html#x34-100000A.5.1">Software Versioning</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.5.2 <a 
+href="mainse20.html#x34-101000A.5.2">Ontology Development</a></span>
+                                                                                   
+
+                                                                                   
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.5.3 <a 
+href="mainse20.html#x34-102000A.5.3">Operating Systems and Browsers Supported</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.5.4 <a 
+href="mainse20.html#x34-103000A.5.4">Future Development</a></span>
+<br />   &#x00A0;<span class="sectionToc" >A.6 <a 
+href="mainse21.html#x35-104000A.6">Conclusion</a></span>
+   </div>
+
+
+
+
+
+                                                                                   
+
+                                                                                   
+   <!--l. 2368--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse16.html" >next</a>] [<a 
+href="mainch4.html" >prev</a>] [<a 
+href="mainch4.html#tailmainch4.html" >prev-tail</a>] [<a 
+href="mainap1.html" >front</a>] [<a 
+href="main3.html#mainap1.html" >up</a>] </p></div>
+<!--l. 2368--><p class="indent" >   <a 
+ id="tailmainap1.html"></a>  
+</body></html> 

@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Introduction</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,index=2,3,next,frames --> 
+<meta name="src" content="main.tex"> 
+<meta name="date" content="2016-07-29 20:29:00"> 
+<link rel="stylesheet" type="text/css" href="main.css"> 
+</head><body 
+>
+   <!--l. 2372--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse23.html" >next</a>] [<a 
+href="mainap2.html" >prev</a>] [<a 
+href="mainap2.html#tailmainap2.html" >prev-tail</a>] [<a 
+href="#tailmainse22.html">tail</a>] [<a 
+href="mainap2.html#mainse22.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">B.1   </span> <a 
+ id="x37-106000B.1"></a>Introduction</h3>
+<!--l. 2373--><p class="noindent" >A dataset or result is only as meaningful as the producer&#8217;s ability to effectively communicate its content,
+making proper data visualization essential for the communication and synthesis of ideas. For highly
+complex, multi-dimensional data produced in the field of brain imaging, this task presents substantial
+challenges. One pertinent example occurs in a developing field of brain imaging, functional magnetic
+resonance imaging (fMRI), which aims to understand the dynamic interactions between regions of the brain
+that work together to produce cognition, thought and behavior &#8211; the so-called &#8220;functional connectome&#8221;
+([<span 
+class="ec-lmbx-10">? ? ? ? ? ? </span>]). The statistical analysis of this data is highly complex, and typically involves
+preprocessing to remove unwanted artifactual noise, the performance of a statistical test, correction for
+multiple comparisons to assess significance, and finally, the dissemination of results to the broader
+neuroimaging community ([<span 
+class="ec-lmbx-10">? ? ? </span>]). While much innovation has occurred in desktop applications to
+visualize these data, significant results are typically reported in a textual format, with perhaps
+one or two static images of a selected region of the brain. This dated strategy presents with
+significant problems. For instance, the selection of a particular set of brain slices, different statistical
+thresholds, choices of field of view, and coloring biases the image to communicate a strategic
+point, potentially clouding the interpretation of results. Neuroimaging researchers cannot spend
+substantial time developing novel visualization strategies, and so static images produced by standard
+software ([<span 
+class="ec-lmbx-10">? ? ? </span>]) become the basis for the visualization of the result. This standard is simply
+unacceptable during a time when web visualization technology [<span 
+class="ec-lmbx-10">? </span>] is blossoming, calling for
+tools to not only properly visualize a functional connectome, but to make it available in a
+web browser, interactive and intuitive, allowing for exploration of the data to generate novel
+hypotheses.
+<!--l. 2375--><p class="indent" >   This chapter presents a prototype of such a tool for exploration of brain functional connectivity data,
+and a review of challenges faced for the visualization of this data. I will first review background of fMRI
+connectivity analyses, with the goal of making transparent the data that defines the creation of these
+functional connectomes. I will then introduce visualization as a powerful tool to explore distributions and
+patterns in these data, and review current tools and strategies for functional connectivity visualization. I
+will then briefly discuss current publication practices, and introduce a novel prototype interface that
+could integrate into such practices that better empowers the researcher to visualize a functional
+connectome. Finally, I will discuss current limitations of the prototype, and long term vision for this
+work.
+<!--l. 2377--><p class="noindent" >
+                                                                                   
+
+                                                                                   
+   <h4 class="subsectionHead"><span class="titlemark">B.1.1   </span> <a 
+ id="x37-107000B.1.1"></a>Derivation of the functional connectome</h4>
+<!--l. 2378--><p class="noindent" >Functional magnetic resonance imaging (fMRI) is an established imaging protocol for assessing activity in
+the human brain. fMRI measures the blood oxygen level dependent (BOLD) response, an indirect measure
+of local neuronal signaling, that can subsequently be used to investigate functional differences between
+individuals and behavioral states ([<span 
+class="ec-lmbx-10">? ? </span>]). A typical experiment involves the collection of BOLD data from a
+series of &#8220;voxels&#8221; (akin to three dimensional pixels) that cover the entire brain over the course of an
+experiment (either task-based or &#8220;resting&#8221; quietly). This data is then analyzed in the context of a
+hypothesis, and the basis of the hypothesis informs the resulting processing and statistical analysis. For
+example, an investigator interested in temporal relations between different parts of the brain, called the
+&#8220;functional connectome&#8221; will begin with a four dimensional dataset having three spatial dimensions, and
+one temporal dimension. Each 3D voxel contains a value that reflects the BOLD response,
+and so a plot of this value over time reflects a proxy of a neuronal activity at that spatial
+location. Assessing the similarity of these timecourses for all voxels in the brain is the basis of
+functional connectivity analyses, as voxels with correlated temporal activity are hypothesized to
+be synchronously active. Thus, the result of a functional connectivity analysis is typically a
+square connectivity matrix, where each coordinate (a voxel ([<span 
+class="ec-lmbx-10">? </span>]), region ([<span 
+class="ec-lmbx-10">? ? </span>]), or data-driven
+parcellation ([<span 
+class="ec-lmbx-10">? ? ? </span>])) represents some probability of connection (correlation) between two
+coordinates. This presents with the first challenge of data visualization &#8211; the responsibility of
+properly representing uncertainty in the data. The second challenge is thresholding to reduce the
+dimensionality of the data. A typical imaging sequence with images of size 91 x 109 x 91 can result in
+approximately 25,000,000K values in the matrix, however since spatially similar regions are
+highly correlated ([<span 
+class="ec-lmbx-10">? </span>]), it is ideal to reduce the size by defining meaningful parcels of related
+voxels.
+<!--l. 2380--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">B.1.2   </span> <a 
+ id="x37-108000B.1.2"></a>Methods for visualization of a functional connectome</h4>
+<!--l. 2381--><p class="noindent" >The core goal of a functional connectome visualization is thus to reveal which parts of the brain are most
+likely to be working synchronously. An ideal visualization will show where significant connections occur,
+and how confident one can be about their presence. The visualization must use color, depth, dimensions,
+thickness, and controls responsibly so this simple goal is not lost. Historically, the derivation of a static
+brain image has been to inform about a specific result, however with the explosion of novel imaging
+technology ([<span 
+class="ec-lmbx-10">? ? </span>]), and databases ([<span 
+class="ec-lmbx-10">? ? ? ? ? </span>]), this task has shifted from a reporting to an investigatory
+one. I will first discuss the progression, advantages, and disadvantages of tools for visualizing connectivity
+graphs, and transition into the methods for the development of a prototype to address current
+challenges.
+                                                                                   
+
+                                                                                   
+<!--l. 2383--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x37-109000B.1.2"></a>Traditional orthogonal views</h5>
+<!--l. 2384--><p class="noindent" >The earliest derivations of functional connectivity reflect the limitations of early software, meaning
+visualization of any brain-based data was limited to the orthogonal views of a three-dimensional
+brain (Figure&#x00A0;<a 
+href="#x37-1120011">B.1<!--tex4ht:ref: fig:62 --></a>a). Traditional software packages ([<span 
+class="ec-lmbx-10">? ? </span>]) offer some version of a viewer to
+overlay a functional result on an anatomical image, and the choice of slice to show reflects the
+bias of the creator. A common analysis suite, Statistical Parametric Mapping (SPM) ([<span 
+class="ec-lmbx-10">? </span>])
+developed the &#8220;glass brain,&#8221; a maximum intensity projection, as a means to literally make results
+transparent.
+<!--l. 2386--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x37-110000B.1.2"></a>A jump to graph-based approaches</h5>
+<!--l. 2387--><p class="noindent" >The traditional glass brain presents with the problem that these connectivity graphs are not focused on the
+spatial locations themselves, but rather, the relationships between them. This is an example of a
+visualization strategy not well fit to the data being visualized. A natural progression was to represent
+connectivity matrices with traditional graph-based approaches, meaning networks of nodes and links
+between them (Figure&#x00A0;<a 
+href="#x37-1120011">B.1<!--tex4ht:ref: fig:62 --></a>b) ([<span 
+class="ec-lmbx-10">? </span>]). Strength between connections, or uncertainty, could be illustrated with
+subtle differences in color or line thickness, and regional information could be added based on positioning
+or coloring. However, the weakness in these visualizations is that intuitive spatial representation is lost ([<span 
+class="ec-lmbx-10">?</span>
+<span 
+class="ec-lmbx-10">? </span>]).
+<!--l. 2389--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x37-111000B.1.2"></a>Connectivity visualized on three-dimensional brains</h5>
+<!--l. 2390--><p class="noindent" >The next logical step was to overlay these connectivity maps back onto anatomical brains (Figure&#x00A0;<a 
+href="#x37-1120011">B.1<!--tex4ht:ref: fig:62 --></a>c) ([<span 
+class="ec-lmbx-10">?</span>
+<span 
+class="ec-lmbx-10">? </span>]). While this restores the spatial meaning, there are several issues with this approach. While
+three-dimensional renders are more visually appealing, the added dimension risks over-complicating the
+visualization ([<span 
+class="ec-lmbx-10">? </span>]), or taxing the web browser ([<span 
+class="ec-lmbx-10">? </span>]). Further, a static visualization of a three-dimensional
+image can hide data.
+<!--l. 2392--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x37-112000B.1.2"></a>Bundled connections</h5>
+<!--l. 2393--><p class="noindent" >These early visualizations shed light on another important observation &#8211; it is more important to synthesize
+what the links represent than visualize the links themselves. Therefore, the field returned to more
+traditional &#8220;graph based&#8221; approaches. With previous methods, distance represented spatial distance in
+anatomical space. With new methods, distance represents connection strength ([<span 
+class="ec-lmbx-10">? </span>]). The &#8220;force directed
+                                                                                   
+
+                                                                                   
+graph&#8221; (Figure&#x00A0;<a 
+href="#x37-1120011">B.1<!--tex4ht:ref: fig:62 --></a>d) available in a software package like Gephi ([<span 
+class="ec-lmbx-10">? </span>]) was a powerful strategy
+to very quickly show functional relationships between regions. The idea of &#8220;bundling&#8221; grew
+out of this work, or grouping connections that might be grouped based on an unsupervised
+hierarchical clustering of the data (Figure&#x00A0;<a 
+href="#x37-1120011">B.1<!--tex4ht:ref: fig:62 --></a>e) ([<span 
+class="ec-lmbx-10">? ? </span>]). It followed to neatly organize this data
+in a circle, a graph called a &#8220;connectogram&#8221; ([<span 
+class="ec-lmbx-10">? </span>]), and arrange the nodes around the circle
+to reflect positioning in the brain from front to back. This is the current state of functional
+connectivity visualization, which must be better integrated into web browsers and journals for
+publication.
+<!--l. 2395--><p class="indent" >   <hr class="figure"><div class="figure" 
+>
+                                                                                   
+
+                                                                                   
+<a 
+ id="x37-1120011"></a>
+                                                                                   
+
+                                                                                   
+<div class="center" 
+>
+<!--l. 2396--><p class="noindent" >
+
+<!--l. 2397--><p class="noindent" ><img 
+src="images/figure62.png" alt="PIC"  
+></div>
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;B.1: </span><span  
+class="content"> Functional connectivity visualizations: Trends in functional connectivity visualizations
+have changed over time, including A) the orthogonal view, showing an axial, coronal, and sagittal
+slice of a functional map overlayed on an anatomical brain, B: graph based network approaches that
+model regions as nodes and links as hubs, C) equivalent networks in the context of brain space, D)
+force directed graphs that represent connectivity with distance, and E) bundling techniques to group
+clusters of connections. <br 
+class="newline" /><br 
+class="newline" /></span></div><!--tex4ht:label?: x37-1120011 -->
+                                                                                   
+
+                                                                                   
+<!--l. 2401--><p class="indent" >   </div><hr class="endfigure">
+   <h4 class="subsectionHead"><span class="titlemark">B.1.3   </span> <a 
+ id="x37-113000B.1.3"></a>Integration of visualizations with technology and publication standards</h4>
+<!--l. 2405--><p class="noindent" >The sheer complexity of these datasets contrasts with the limitations of the amount of data that can be
+shown in a web browser, which is largely dependent on the memory of the machine accessing it. Methods
+such as caching, edge computing, data replication, and proper utilization of database querying make the
+goal of showing some aspect of functional connectivity data a reasonable one. In print media, the standard
+of publication is tied back to our preference to read books, and scientific journals themselves, which dates
+back to 1665 when Philosophical Transactions of the Royal Society was released as the first
+exclusively scientific journal. The modern version of this trend is distribution of electronic
+articles, many of which are packaged nicely into PDF files. Researchers typically export an
+image from a software tool, and then add additional labels or coloring in a vector graphics
+program. This procedure is highly time intensive, and unfortunately, it is not a requirement to
+share the production procedure. It would be highly valuable to have a web framework that
+not only standardizes the data processing, but also provides standards for visualization of the
+result.
+                                                                                   
+
+                                                                                   
+   <!--l. 2407--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse23.html" >next</a>] [<a 
+href="mainap2.html" >prev</a>] [<a 
+href="mainap2.html#tailmainap2.html" >prev-tail</a>] [<a 
+href="mainse22.html" >front</a>] [<a 
+href="mainap2.html#mainse22.html" >up</a>] </p></div>
+<!--l. 2407--><p class="indent" >   <a 
+ id="tailmainse22.html"></a>   
+</body></html> 

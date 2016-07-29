@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Methods</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,index=2,3,next,frames --> 
+<meta name="src" content="main.tex"> 
+<meta name="date" content="2016-07-29 20:29:00"> 
+<link rel="stylesheet" type="text/css" href="main.css"> 
+</head><body 
+>
+   <!--l. 2407--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse24.html" >next</a>] [<a 
+href="mainse22.html" >prev</a>] [<a 
+href="mainse22.html#tailmainse22.html" >prev-tail</a>] [<a 
+href="#tailmainse23.html">tail</a>] [<a 
+href="mainap2.html#mainse23.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">B.2   </span> <a 
+ id="x38-114000B.2"></a>Methods</h3>
+<!--l. 2408--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">B.2.1   </span> <a 
+ id="x38-115000B.2.1"></a>Parcellation and connectivity matrix generation</h4>
+<!--l. 2409--><p class="noindent" >Functional imaging data was provided by the MyConnectome project (<a 
+href="http://www.myconnectome.org" >http://www.myconnectome.org</a>), for
+which all data, processing protocol, and code is publicly available through a standard data sharing
+agreement. For this prototype, a mean connectivity matrix from an individual was derived from all resting
+BOLD scans. A parcellation procedure ([<span 
+class="ec-lmbx-10">? </span>]) was used to define 565 distinct regions, each of which was used
+to mask the data to define timecourses. Pearson correlation was used to generate the connectivity matrix,
+M, [565 x 565].
+<!--l. 2411--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">B.2.2   </span> <a 
+ id="x38-116000B.2.2"></a>Interface development</h4>
+<!--l. 2412--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x38-117000B.2.2"></a>Web technology</h5>
+<!--l. 2413--><p class="noindent" >Data Driven Documents, &#8220;D3&#8221; is a JavaScript library based on web standards (HTML, SVG, and CSS) ([<span 
+class="ec-lmbx-10">?</span>
+]) that allows for generation of interactive, web visualizations. This technology was selected for development
+of this interface due to integration with multiple platforms and browser types, as well as the utilization of
+scalable vector graphics (SVG) to drive the visualization. A SVG is a vector based graphic, meaning that it
+is well-suited for publication, and the graphic could be exported from the interface for this
+purpose.
+<!--l. 2415--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x38-118000B.2.2"></a>Visualization Strategy</h5>
+<!--l. 2416--><p class="noindent" >The goals of the brain visualization were to provide a two-dimensional rendition of a brain that maintained
+anatomical spatial accuracy in its representation. First, I created a matrix of parcel x,y,z coordinates, C
+                                                                                   
+
+                                                                                   
+(565 x 3) and calculated the Euclidean distances between coordinates, resulting in a distance matrix,
+Cd, of size (565 x 565). I then used the cmdscale function in R ([<span 
+class="ec-lmbx-10">? </span>]) to transform the three
+dimensional matrix into two-dimensions. MDS is a method for dimensionality reduction that can
+visualize any N dimensional dataset in fewer dimensions, allowing for projection of the three
+dimensional coordinates onto a two-dimensional plane. The algorithm works by placing each of the
+three-dimensional points in such a way so that similarity between points is preserved in distances
+([<span 
+class="ec-lmbx-10">? </span>]). This resulted in a flat axial image of brain coordinates onto which connections can be
+mapped.
+<!--l. 2418--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x38-119000B.2.2"></a>Data Filtering</h5>
+<!--l. 2419--><p class="noindent" >Portrayal of all 565 x 565 = 319,225 connectivity values in the matrix would generate a slow visualization,
+and so it was decided to threshold values to include the top 1% of both positive and negative values using
+the &#8220;quantile&#8221; function in R ([<span 
+class="ec-lmbx-10">? </span>]) for a total of N=3,914.
+<!--l. 2421--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">B.2.3   </span> <a 
+ id="x38-120000B.2.3"></a>Design choices</h4>
+<!--l. 2422--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x38-121000B.2.3"></a>Coloring, thickness, and size</h5>
+<!--l. 2423--><p class="noindent" >The parcels that form the two-dimensional brain mapping are each colored by the functional network to
+which they belong, and this coloring is consistent with a set of large buttons above the brain that the user
+can click to turn &#8220;on&#8221; or &#8220;off&#8221; a particular network. The links are colored with a gradient, so in the case of
+a connection between parcels from different networks, the color transitions seamlessly. The node size
+changes dynamically to reflect the number of connections to it, and the viewer can click on nodes to
+highlight connections.
+<!--l. 2425--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x38-122000B.2.3"></a>Dimensionality</h5>
+<!--l. 2426--><p class="noindent" >The next challenge was orienting the viewer in a three-dimensional space with a two-dimensional image. A
+simple strategy was utilized that, upon moving the cursor over any particular parcel on the brain
+map, shows the viewer an axial orthogonal slice with a bright red spot to indicate the parcel
+location.
+                                                                                   
+
+                                                                                   
+<!--l. 2428--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x38-123000B.2.3"></a>Data Values</h5>
+<!--l. 2429--><p class="noindent" >An interface cluttered with data values can distract the viewer, and so &#8220;tooltips,&#8221; or boxes of information
+that appear upon moving the cursor over an object in the visualization, were utilized to give feedback on
+links strengths, and node x,y,z coordinates.
+<!--l. 2431--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x38-124000B.2.3"></a>Interface Controls</h5>
+<!--l. 2432--><p class="noindent" >The main control panel, including buttons to turn links associated with networks &#8220;on&#8221; or &#8220;off&#8221; and a slider
+to threshold the connectivity value, is placed above the brain map for easy accessibility. Dynamically
+changing summary statistics (mean, min, max, counts) are on the left panel. The right panel includes image
+export options. The finished prototype is available at <a 
+href="http://vsoch.github.io/mybrain" >http://vsoch.github.io/mybrain</a>.
+                                                                                   
+
+                                                                                   
+   <!--l. 2434--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse24.html" >next</a>] [<a 
+href="mainse22.html" >prev</a>] [<a 
+href="mainse22.html#tailmainse22.html" >prev-tail</a>] [<a 
+href="mainse23.html" >front</a>] [<a 
+href="mainap2.html#mainse23.html" >up</a>] </p></div>
+<!--l. 2434--><p class="indent" >   <a 
+ id="tailmainse23.html"></a>    
+</body></html> 

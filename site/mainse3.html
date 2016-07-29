@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Large Scale Image Comparison</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,index=2,3,next,frames --> 
+<meta name="src" content="main.tex"> 
+<meta name="date" content="2016-07-29 20:29:00"> 
+<link rel="stylesheet" type="text/css" href="main.css"> 
+</head><body 
+>
+   <!--l. 470--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse4.html" >next</a>] [<a 
+href="mainse2.html" >prev</a>] [<a 
+href="mainse2.html#tailmainse2.html" >prev-tail</a>] [<a 
+href="#tailmainse3.html">tail</a>] [<a 
+href="mainch1.html#mainse3.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">1.3   </span> <a 
+ id="x13-210001.3"></a>Large Scale Image Comparison</h3>
+<!--l. 472--><p class="noindent" >CBMA approaches were appropriate for a landscape under which we did not have availability of entire
+statistical maps.&#x00A0;This is not to say that one approach is better than the other (in fact coordinate data can
+be viewed as a transformation of whole brain data into a reduced representation), but rather researchers
+must choose where to operate along the dimension that spans between a whole brain map and a small set
+of coordinates that represent it. Whole brain map data is higher quality in that it does not strip away
+valuable information represented in the non-significant values, however using it comes at the cost of
+requiring more computational resources and storage. However, the neuroinformatics landscape is
+changing to accommodate these larger data. Databases such as NeuroVault [<span 
+class="ec-lmbx-10">? </span>], ANIMA [<span 
+class="ec-lmbx-10">? </span>],
+NDAR [<span 
+class="ec-lmbx-10">? </span>], the Human Connectome Project [<span 
+class="ec-lmbx-10">? </span>], and others [<span 
+class="ec-lmbx-10">? ? </span>], are delivering whole-brain
+statistical maps&#x00A0;for the research community. Notably for databases like NeuroVault for which a
+researcher can share a map that does not have a &#8220;significant&#8221; result (as publication of these
+results is highly challenging), we are able to start addressing the problem of publication bias in
+meta-analysis.
+<!--l. 492--><p class="indent" >   However, under the assumption that we have collected a set of brain maps that we want to compare, it
+is not a trivial task to decide how to do this. We may want a &#8220;pair-wise&#8221; comparison, meaning to take a
+single group result and derive some similarity score to all other group results, or we may want a
+holistic summary, meaning a single brain map that somehow combines across group maps.
+The simplest IBMA approach would be to take an average over a set of images, but such an
+approach would likely smooth away signal, and information about variance across studies. The
+problem of performing image-based meta-analysis comes in two parts: the development of robust
+metrics to integrate information such as effect size and variance, and higher level strategies
+to perform the IBMA across disparate data sets. A reasonable first goal, and the motivation
+behind this work, is to understand how different transformations of brain maps, and different
+kinds of high level features, contribute to an image comparison. Further, the goals of the image
+comparison must be taken into account, meaning identifying maps that were derived from studies of
+interest. We can think of this labeling of studies in two different feature spaces, semantic and
+spatial.
+<!--l. 512--><p class="noindent" >
+                                                                                   
+
+                                                                                   
+   <h4 class="subsectionHead"><span class="titlemark">1.3.1   </span> <a 
+ id="x13-220001.3.1"></a>Spatial and semantic understanding</h4>
+<!--l. 514--><p class="noindent" >The analysis of images brings with it a complex feature space, as an image can be understood not only in
+terms of its pixel or voxel values, but also in terms of more complex derived features and knowledge-based
+annotations. For this work, I will refer to features based on description of the values themselves as
+&#8220;spatial,&#8221; and features associated with terms to describe the images as &#8220;semantic.&#8221; While the large majority
+of work (for example, the methods previously described) derive comparisons based on spatial features,
+evidence suggests that there is value in both semantic and spatial features [<span 
+class="ec-lmbx-10">? </span>] to classify images. Semantic
+understanding is important because as human beings reliant on language, it is with terms that we
+describe behavioral paradigms and cognitive processes. We do not intuitively understand a
+phenomena such as &#8220;decision making&#8221; as numerical values associated with peak coordinate
+locations and activations, but rather as a collection of semantic terms that we hypothesize describe
+this complex cognitive process. As a result, we have developed ontologies, or descriptions of
+entities and the relationships between those entities, for cognitive processes. It is by way of
+associating these standard terminologies with whole brain statistical maps that we can make
+statements or inferences about the function of the human brain in terms that humans can actually
+understand.
+                                                                                   
+
+                                                                                   
+   <!--l. 536--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse4.html" >next</a>] [<a 
+href="mainse2.html" >prev</a>] [<a 
+href="mainse2.html#tailmainse2.html" >prev-tail</a>] [<a 
+href="mainse3.html" >front</a>] [<a 
+href="mainch1.html#mainse3.html" >up</a>] </p></div>
+<!--l. 536--><p class="indent" >   <a 
+ id="tailmainse3.html"></a>   
+</body></html> 

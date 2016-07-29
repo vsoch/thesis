@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>The Experiment Factory</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,index=2,3,next,frames --> 
+<meta name="src" content="main.tex"> 
+<meta name="date" content="2016-07-29 20:29:00"> 
+<link rel="stylesheet" type="text/css" href="main.css"> 
+</head><body 
+>
+   <!--l. 1874--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse18.html" >next</a>] [<a 
+href="mainse16.html" >prev</a>] [<a 
+href="mainse16.html#tailmainse16.html" >prev-tail</a>] [<a 
+href="#tailmainse17.html">tail</a>] [<a 
+href="mainap1.html#mainse17.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">A.2   </span> <a 
+ id="x31-80000A.2"></a>The Experiment Factory</h3>
+<!--l. 1876--><p class="noindent" >An essential and often overlooked feature of research workflow is the distinction between developer and
+user. A developer is a researcher interested in creating experimental paradigms and infrastructure, while
+a user simply wants to use the paradigms. While some researchers aim to dig deep into the
+code for an application, others simply want to use it, and a successful infrastructure must
+serve both. Toward this aim, the Experiment Factory employs a modular strategy, providing
+separate components (Github repositories) for experiments, battery, and deployments (see
+The Experiment Factory Infrastructure), and allows researchers to deploy experiments into
+current tools that researchers already find useful (e.g., Psiturk, see Table&#x00A0;<a 
+href="mainse18.html#x32-930033">A.3<!--tex4ht:ref: table:table43 --></a> for Glossary of
+terms), and under different likely scenarios like not having access to an internet connection,
+or needing to save data to a private database. First I will outline some use case scenarios to
+describe the motivation behind this work, followed by an outline of the infrastructure in more
+detail.
+<!--l. 1892--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">A.2.1   </span> <a 
+ id="x31-81000A.2.1"></a>The Experiment Factory Use Cases</h4>
+<!--l. 1894--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x31-82000A.2.1"></a>Deployment of Experiments</h5>
+<!--l. 1895--><p class="noindent" >The Experiment Factory aims to offer both flexibility and structure. A researcher has complete control over
+the deployment environment (local or cloud), along with the infrastructure used for the deployment (see
+The Experiment Factory Infrastructure). Under any circumstance, the researcher has complete control over
+the set of experiments that are selected, and the resulting data are provided in several output formats. For
+this thesis, I will walk through several use cases. When I refer to a module such as &#8221;experiments,&#8221; I am
+referring to a Github repo, and more information is available about these components in the second part of
+this chapter.
+                                                                                   
+
+                                                                                   
+<!--l. 1906--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x31-83000A.2.1"></a><span 
+class="ec-lmbx-10">Local Deployment of Experiments</span></span>
+   The most basic use case is when a researcher wants to run participants locally through the
+paradigms already included in the experiments module. This approach is easily accomplished
+using the expfactory command line tool (Section 4.2.1 The Experiment Factory Software).
+Using the tool, a researcher can, in one line of code, select experiments, define a participant
+unique ID, and bring up a web interface to deploy a set of connected experiments called a
+&#8220;battery&#8221;:
+<!--l. 1916--><p class="indent" >   expfactory &#8211;run &#8211;experiments stroop,nback &#8211;subid UID001
+<!--l. 1918--><p class="indent" >   In the case that the user wants to save a static folder to run later, the argument &#8220;&#8211;generate&#8221; can be
+used in a similar fashion. While the default behavior is to use the latest experiments and battery templates
+from the repositories, a researcher can ensure that experiments and battery code remains constant by
+saving (cloning) the repositories to a local machine, and providing the paths to the folders as arguments to
+the tool (see the docs at expfactory.readthedocs.org for details). The data are downloaded to the local
+machine directly in the browser after the experiment completes, and named according to the participant
+unique ID.
+<!--l. 1929--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x31-84000A.2.1"></a><span 
+class="ec-lmbx-10">Deployment of Experiments using Psiturk</span></span>
+   The Psiturk infrastructure is a well-developed platform for deploying experiments on Mechanical Turk.
+Due to its substantial user base and documentation, it was imperative that the experiments be easily
+deployable to Psiturk. Using the expfactory command line tool without any arguments:
+<!--l. 1937--><p class="indent" >   expfactory
+<!--l. 1939--><p class="indent" >   a user can open up a web interface to choose experiments, a database specification, and a
+deployment. After selection of these variables, either a folder or file to run a virtual machine is
+provided to the user. This functionality is also possible using the command line tool with the
+command:
+<!--l. 1945--><p class="indent" >   expfactory &#8211;generate &#8211;experiments stroop,nback &#8211;folder /home/output
+<!--l. 1947--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x31-85000A.2.1"></a><span 
+class="ec-lmbx-10">Local Modification of Experiment or Battery</span></span>
+   Researchers may want to use the experiments included in the experiments module as a &#8220;base
+paradigm&#8221;, but make modifications for their own purposes (e.g. change the stimuli images, increase the
+trial length). Similarly, researchers may want to supplement the paradigms available with their own
+experiments. If a set of experiments have already been downloaded as a set of folders, modifying a
+paradigm simply requires changing the files in a specific experiment folder. While this currently requires
+some JavaScript coding knowledge, modification of a restricted set of experiment variables through
+variables in the configuration file of an experiment (Table&#x00A0;<a 
+href="#x31-850011">A.1<!--tex4ht:ref: table:table41 --></a>) will be implemented in the future.
+<br 
+class="newline" />
+   <div class="table">
+                                                                                   
+
+                                                                                   
+<!--l. 1960--><p class="indent" >   <a 
+ id="x31-850011"></a><hr class="float"><div class="float" 
+>
+                                                                                   
+
+                                                                                   
+<div class="tabular"> <table id="TBL-6" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-6-1g"><col 
+id="TBL-6-1"></colgroup><colgroup id="TBL-6-2g"><col 
+id="TBL-6-2"></colgroup><colgroup id="TBL-6-3g"><col 
+id="TBL-6-3"></colgroup><colgroup id="TBL-6-4g"><col 
+id="TBL-6-4"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-1-1"  
+class="td11"><span 
+class="ec-lmbx-10">Field Name                </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-1-2"  
+class="td11"><span 
+class="ec-lmbx-10">Requirement Level                                                                                        </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-1-3"  
+class="td11"><span 
+class="ec-lmbx-10">Rationale                                                                                                     </span></td><td  style="white-space:wrap; text-align:left;" id="TBL-6-1-4"  
+class="td11"><!--l. 1964--><p class="noindent" ><span 
+class="ec-lmbx-10">Example</span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-2-1"  
+class="td11">name                              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-2-2"  
+class="td11">not required, warning                                                                                                      </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-2-3"  
+class="td11"><!--l. 1965--><p class="noindent" ><img 
+src="main1x.png" alt="            descriptive label
+            of experiment  "  class="pic-halign" >                                                                                                           </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-2-4"  
+class="td11"><!--l. 1965--><p class="noindent" >Antisaccade          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-3-1"  
+class="td11">run                                 </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-3-2"  
+class="td11"><!--l. 1966--><p class="noindent" ><img 
+src="main2x.png" alt="required,
+not valid without  "  class="pic-halign" >                                                                                                         </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-3-3"  
+class="td11"><!--l. 1966--><p class="noindent" ><img 
+src="main3x.png" alt="            scripts required
+            for the experiment
+            to run  "  class="pic-halign" >                                                                                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-3-4"  
+class="td11"><!--l. 1966--><p class="noindent" ><!--l. 1966--><p class="noindent" ><img 
+src="main4x.png" alt="                                                                                                 experiment.js
+                                                                                                 style.css  "  class="pic-halign" >      </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-4-1"  
+class="td11">exp_id                            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-4-2"  
+class="td11"><!--l. 1967--><p class="noindent" ><img 
+src="main5x.png" alt="required,
+not valid without  "  class="pic-halign" >                                                                                                         </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-4-3"  
+class="td11">unique identifier                                                                                                             </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-4-4"  
+class="td11"><!--l. 1967--><p class="noindent" >antisaccade           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-5-1"  
+class="td11">cognitive_atlas_concept_id</td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-5-2"  
+class="td11">not required, warning                                                                                                      </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-5-3"  
+class="td11"><!--l. 1968--><p class="noindent" ><img 
+src="main6x.png" alt="            mapping of experiment
+            to cognitive concepts
+            it measures  "  class="pic-halign" >                                                                                                  </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-5-4"  
+class="td11"><!--l. 1968--><p class="noindent" >trm_4b1968619b00b </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-6-1"  
+class="td11">contributors                     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-6-2"  
+class="td11">not required                                                                                                                  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-6-3"  
+class="td11"><!--l. 1969--><p class="noindent" ><img 
+src="main7x.png" alt="            credit and source
+            of help  "  class="pic-halign" >                                                                                                          </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-6-4"  
+class="td11"><!--l. 1969--><p class="noindent" ><!--l. 1969--><p class="noindent" ><img 
+src="main8x.png" alt="                                                                                                 Ian Eisenberg
+                                                                                                 Vanessa Sochat
+                                                                                                 Zeynep Enkavi  "  class="pic-halign" >   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-7-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-7-1"  
+class="td11">time                               </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-7-2"  
+class="td11"><!--l. 1970--><p class="noindent" ><img 
+src="main9x.png" alt="required,
+not valid without  "  class="pic-halign" >                                                                                                         </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-7-3"  
+class="td11"><!--l. 1970--><p class="noindent" ><img 
+src="main10x.png" alt="            run time in
+            minutes  "  class="pic-halign" >                                                                                                                 </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-7-4"  
+class="td11"><!--l. 1970--><p class="noindent" >8                        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-8-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-8-1"  
+class="td11">experiment_variables         </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-8-2"  
+class="td11">not required                                                                                                                  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-8-3"  
+class="td11"><!--l. 1971--><p class="noindent" ><img 
+src="main11x.png" alt="            variables for
+            allocation of
+            credit or reward  "  class="pic-halign" >                                                                                                           </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-8-4"  
+class="td11"><!--l. 1971--><p class="noindent" >reaction_time       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-9-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-9-1"  
+class="td11">reference                          </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-9-2"  
+class="td11">not required, warning                                                                                                      </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-9-3"  
+class="td11"><!--l. 1972--><p class="noindent" ><img 
+src="main12x.png" alt="            fpualrla ddoicgummentation of  "  class="pic-halign" >                                                                                                    </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-9-4"  
+class="td11"><!--l. 1972--><p class="noindent" >doi:10.1006/...       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-10-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-10-1"  
+class="td11">notes                              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-10-2"  
+class="td11">not required                                                                                                                  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-10-3"  
+class="td11"><!--l. 1973--><p class="noindent" ><img 
+src="main13x.png" alt="            additional
+            information to
+            capture  "  class="pic-halign" >                                                                                                             </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-10-4"  
+class="td11"><!--l. 1973--><p class="noindent" >should   not   wear
+glasses                 </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-11-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-11-1"  
+class="td11">publish                            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-11-2"  
+class="td11"><!--l. 1974--><p class="noindent" ><img 
+src="main14x.png" alt="required,
+not valid without  "  class="pic-halign" >                                                                                                         </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-11-3"  
+class="td11"><!--l. 1974--><p class="noindent" ><img 
+src="main15x.png" alt="            ready for
+            deployment  "  class="pic-halign" >                                                                                                                 </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-11-4"  
+class="td11"><!--l. 1974--><p class="noindent" >True                    </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-12-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-12-1"  
+class="td11">template                          </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-12-2"  
+class="td11"><!--l. 1975--><p class="noindent" ><img 
+src="main16x.png" alt="required,
+not valid without  "  class="pic-halign" >                                                                                                         </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-12-3"  
+class="td11"><!--l. 1975--><p class="noindent" ><img 
+src="main17x.png" alt="            experiment
+            library base  "  class="pic-halign" >                                                                                                                 </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-12-4"  
+class="td11"><!--l. 1975--><p class="noindent" >jspsych                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-13-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-13-1"  
+class="td11">                        </td></tr></table>
+</div>
+<br /><div class="caption" 
+><span class="id">Table&#x00A0;A.1: </span><span  
+class="content"> The fields required in the standard &#8220;config.json&#8221; for an Experiment Factory Experiment.
+The definition of files and and a template are essential to validate the function of the experiments.
+The examples for each field above are limited and not in JSON, full config.json are available for
+inspection in the experiment folders (<a 
+href="https://github.com/expfactory/expfactory-experiments" >https://github.com/expfactory/expfactory-experiments</a>)</span></div><!--tex4ht:label?: x31-850011 -->
+<!--l. 1978--><p class="noindent" >.
+                                                                                   
+
+                                                                                   
+   </div><hr class="endfloat" />
+   </div>
+   <h4 class="subsectionHead"><span class="titlemark">A.2.2   </span> <a 
+ id="x31-86000A.2.2"></a>Development of Experiments and Infrastructure</h4>
+<!--l. 1983--><p class="noindent" >The Experiment Factory uses an open source development strategy, meaning that all code is publicly
+available on Github (<a 
+href="http://www.github.com/expfactory" >http://www.github.com/expfactory</a>), and contributions are made to any of the code
+bases via forking of repositories and pull requests. Full documentation about this process is available
+(<a 
+href="http://expfactory.readthedocs.org/en/latest/development.html#contributing-to-code" >http://expfactory.readthedocs.org/en/latest/development.html#contributing-to-code</a>). The code base has
+been developed and tested on Linux (Ubuntu) and Mac OS.
+<!--l. 1990--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x31-87000A.2.2"></a>Experiment Development</h5>
+<!--l. 1991--><p class="noindent" >Contributing a new experiment constitutes adding a new folder to the experiments repository that meets
+the minimal requirements for expfactory (i.e. including a JavaScript file to run the experiment,
+and a configuration file to specify meta-data). Additional script and style files, along with
+images, sound, or other files necessary for deployment, are optional. An experiment template
+is provided for researchers to start with, and a recommended strategy is to copy and make
+modifications to a similar experiment that already exists. Development of an experiment means some
+familiarity with JavaScript and HTML/CSS, and ability to collaboratively work on Github.
+Descriptions about the required variables for the configuration file are provided (Table&#x00A0;<span 
+class="ec-lmbx-10">??</span>). To
+test experiments, the user has several options. The Experiment Factory software command
+line tool can be run from within any experiment folder to open up a web browser to test a
+single experiment manually with &#8220;expfactory &#8211;preview,&#8221; to test a single experiment with an
+experiment robot using &#8220;expfactory &#8211;test,&#8221; or to validate the configuration file with &#8220;expfactory
+&#8211;validate.&#8221;
+<!--l. 2007--><p class="indent" >   See full documentation at <a 
+href="http://expfactory.readthedocs.org" >http://expfactory.readthedocs.org</a>.
+<!--l. 2010--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x31-88000A.2.2"></a>Documentation and Infrastructure Development</h5>
+<!--l. 2012--><p class="noindent" >Infrastructure and methods are useless without proper documentation. The Experiment Factory uses the
+sphinx documentation tool, served with the Experiment Factory Github repository, meaning that it is built
+automatically when the code base is updated. This documentation standard uses restructured text syntax (rst)
+(<a 
+href="http://docutils.sourceforge.net/rst.html" >http://docutils.sourceforge.net/rst.html</a>). A set of pages have been written to supplement the functions
+that the module provides, and also provided is documentation for how to contribute to documentation
+(<a 
+href="http://expfactory.readthedocs.org/en/latest/development.html#contributing-to-this-documentation" >http://expfactory.readthedocs.org/en/latest/development.html#contributing-to-this-documentation</a>).
+                                                                                   
+
+                                                                                   
+Contributions for any of the Experiment Factory components from the larger community are welcomed and
+encouraged.
+<!--l. 2023--><p class="indent" >   Complete tutorials and further details are provided in our development documentation
+<br 
+class="newline" />(<a 
+href="http://expfactory.readthedocs.org/en/latest/development.html" >http://expfactory.readthedocs.org/en/latest/development.html</a>)
+                                                                                   
+
+                                                                                   
+   <!--l. 2027--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse18.html" >next</a>] [<a 
+href="mainse16.html" >prev</a>] [<a 
+href="mainse16.html#tailmainse16.html" >prev-tail</a>] [<a 
+href="mainse17.html" >front</a>] [<a 
+href="mainap1.html#mainse17.html" >up</a>] </p></div>
+<!--l. 2027--><p class="indent" >   <a 
+ id="tailmainse17.html"></a>    
+</body></html> 

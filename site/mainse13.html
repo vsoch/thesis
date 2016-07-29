@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Results</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,index=2,3,next,frames --> 
+<meta name="src" content="main.tex"> 
+<meta name="date" content="2016-07-29 20:29:00"> 
+<link rel="stylesheet" type="text/css" href="main.css"> 
+</head><body 
+>
+   <!--l. 1508--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse14.html" >next</a>] [<a 
+href="mainse12.html" >prev</a>] [<a 
+href="mainse12.html#tailmainse12.html" >prev-tail</a>] [<a 
+href="#tailmainse13.html">tail</a>] [<a 
+href="mainch3.html#mainse13.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">3.3   </span> <a 
+ id="x25-640003.3"></a>Results</h3>
+<!--l. 1510--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">3.3.1   </span> <a 
+ id="x25-650003.3.1"></a>Semantic image comparison in a classification framework</h4>
+<!--l. 1512--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x25-660003.3.1"></a>Prediction of whole-brain statistical maps using cognitive concepts</h5>
+<!--l. 1513--><p class="noindent" >I used a voxelwise encoding model to test the predictive ability of semantic annotations in a classification
+framework for 93 whole brain statistical maps from the NeuroVault database. &#x00A0;There were a total of 7209
+correct predictions out of a total of 8554 predictions (accuracy = 0.843), and comparison against the null
+distribution of accuracies (N=1000) produced a mean accuracy of 0.49 (p&#x003C;0.001), demonstrating that a
+classification procedure using semantic information performs well above chance. A full normalized confusion
+matrix <a 
+href="https://github.com/vsoch/semantic-image-comparison/blob/master/update/encoding_regression_performance/classification_confusion_binary_4mm_perform_norm.tsv" >is available</a>.
+<!--l. 1522--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x25-670003.3.1"></a><span 
+class="ec-lmbx-10">Learned Concept Map Validation</span></span>
+   The top concepts most commonly associated with correct prediction included, face maintenance, left
+hand response execution, body maintenance, place maintenance, and pattern recognition with correct
+prediction of all associated images. Concepts most commonly associated with incorrect prediction
+included context representation, mental representation, and monetary reward prediction error,
+correctly predicting associated images approximately 0.17 of the time. The full concept confusion
+matrix with correct frequency, incorrect frequency, and image counts is available as <a 
+href="https://github.com/vsoch/semantic-image-comparison/blob/master/update/encoding_regression_performance/classification_concept_confusion_norm_perform.tsv" >is available</a>.
+Within the incorrect predictions, we would want to know if the proportion of confusions can be
+attributed to a particular relationship type. For example, confusions can occur when two contrast
+images belong to the same task (within-task), or when images are from the same collection but
+have different tasks (between-task). Finally, images can be from entirely different collections
+(between-collection). To determine these proportions, we counted the number of confusions that
+occurred within-collection (between-task), within-task, and between-collection, and normalized by
+the total number of images within each category. The rates of within-task, within-collection
+                                                                                   
+
+                                                                                   
+(between-task), and between-collection were 0.24 ( 76/322 ), 0.20 ( 93/450 ), and 0.23 ( 1798/7784 ),
+respectively. While we would have expected more images to be confused within-task (e.g.,
+memory paradigms often query the same processes but use different stimuli such as houses, tools,
+or faces), this result suggests that the cause of error was perhaps more consistent between
+classes. Visual inspection of several of the highly confused images revealed maps with highly
+robust spatial activation, suggesting that the common error might be attributed to lack of
+distinct spatial pattern. To visualize the concepts, an example of best and worst predictive
+concept-specific Z-score brain maps generated from the regression parameters are provided in
+Figure&#x00A0;<a 
+href="#x25-670012">3.2<!--tex4ht:ref: fig:32 --></a>. All regression parameter maps are publicly available in the NeuroVault database
+(<a 
+href="http://neurovault.org/collections/1170/" >http://neurovault.org/collections/1170/</a>).
+<!--l. 1556--><p class="indent" >   <hr class="figure"><div class="figure" 
+>
+                                                                                   
+
+                                                                                   
+<a 
+ id="x25-670012"></a>
+                                                                                   
+
+                                                                                   
+<div class="center" 
+>
+<!--l. 1557--><p class="noindent" >
+
+<!--l. 1558--><p class="noindent" ><img 
+src="images/figure32.png" alt="PIC"  
+></div>
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;3.2: </span><span  
+class="content"> Concepts associated with correct and incorrect predictions. Regression parameters from
+the encoding model reconstructed into brain maps to provide a visual understanding of what the
+model learned, for concepts consistently associated with correct predictions (top row), and associated
+with incorrect predictions (bottom row). Maps used in the classification task included voxelwise
+data, and are thresholded above to show the highest positive (red) and negative (blue) values.</span></div><!--tex4ht:label?: x25-670012 -->
+                                                                                   
+
+                                                                                   
+<!--l. 1567--><p class="indent" >   </div><hr class="endfigure">
+   <h5 class="subsubsectionHead"><a 
+ id="x25-680003.3.1"></a>Prediction of coordinate-based statistical maps using cognitive concepts</h5>
+<!--l. 1570--><p class="noindent" >The voxelwise encoding models used to assess the predictive ability of semantic annotations using
+coordinate-based image data from the NeuroSynth database in a classification framework were generated
+for each of 101 iterations, each encompassing approimately 1% of NeuroSynth abstracts. Across the
+101 iterations, there were 644,106 comparisons and 438,600 were correct for an accuracy of
+0.68.
+<!--l. 1574--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">3.3.2   </span> <a 
+ id="x25-690003.3.2"></a>Comparison of semantic to spatial similarity</h4>
+<!--l. 1576--><p class="noindent" >Comparing a spatial similarity matrix to matrices of semantic image comparison scores (derived from the
+ascos, jacaard, katz, lhn, inverse log weighted, dice, and cosine similarity metrics) using representational
+similarity analysis (RSA) was used to assess if semantic image comparison is similar to spatial, and
+further, what level of relationships ("is a kind of", "is a part of" or both combined) produces
+stronger correlation with spatial similarity. A matrix of semantic image comparisons, done
+by way of the Wang metric implemented in cogat-similaR [<span 
+class="ec-lmbx-10">? </span>] was also compared. Across all
+comparisons, the highest RSA scores resulted from katz similarity using "part of" relationships
+(RSA correlation = 0.536), ascos similarity using both relationships (RSA correlation = 0.526),
+and then the Wang metric (RSA correlation = 0.514). The direct comparison between spatial
+and semantic values is shown in Figure&#x00A0;<a 
+href="#x25-690013">3.3<!--tex4ht:ref: fig:33 --></a>, and complete results for all metrics is included in
+Table&#x00A0;<a 
+href="#x25-690021">3.1<!--tex4ht:ref: table:table31 --></a>.
+<!--l. 1578--><p class="indent" >   <hr class="figure"><div class="figure" 
+>
+                                                                                   
+
+                                                                                   
+<a 
+ id="x25-690013"></a>
+                                                                                   
+
+                                                                                   
+<div class="center" 
+>
+<!--l. 1579--><p class="noindent" >
+
+<!--l. 1580--><p class="noindent" ><img 
+src="images/figure33.png" alt="PIC"  
+></div>
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;3.3: </span><span  
+class="content"> Comparison of semantic to spatial similarity. Semantic image comparison is correlated
+with spatial image comparison (pearson score of 0.514 (95% confidence interval = (0.499,0.53),
+p-value &#x003C; 2.2e-16)) across all pairwise image comparisons. Task and contrast specific RSA scores
+are included in <a 
+href="https://github.com/vsoch/thesis/blob/master/supplementary/chapter3/supp1_spatial_semantic_rsa_df.csv" >Supplementary data 3.2</a>.</span></div><!--tex4ht:label?: x25-690013 -->
+                                                                                   
+
+                                                                                   
+<!--l. 1587--><p class="indent" >   </div><hr class="endfigure">
+   <div class="table">
+                                                                                   
+
+                                                                                   
+<!--l. 1589--><p class="indent" >   <a 
+ id="x25-690021"></a><hr class="float"><div class="float" 
+>
+                                                                                   
+
+                                                                                   
+<div class="tabular"> <table id="TBL-5" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-5-1g"><col 
+id="TBL-5-1"></colgroup><colgroup id="TBL-5-2g"><col 
+id="TBL-5-2"></colgroup><colgroup id="TBL-5-3g"><col 
+id="TBL-5-3"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-1-1"  
+class="td11"><span 
+class="ec-lmbx-10">Metric             </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-1-2"  
+class="td11"><span 
+class="ec-lmbx-10">Relation</span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-1-3"  
+class="td11"><span 
+class="ec-lmbx-10">RSA Score</span></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-2-1"  
+class="td11">katz </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-2-2"  
+class="td11">part of </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-2-3"  
+class="td11">0.537</td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-3-1"  
+class="td11">ascos                    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-3-2"  
+class="td11">both       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-3-3"  
+class="td11">0.527          </td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-4-1"  
+class="td11">wang </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-4-2"  
+class="td11">kind of </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-4-3"  
+class="td11">0.526</td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-5-1"  
+class="td11">katz                     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-5-2"  
+class="td11">both       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-5-3"  
+class="td11">0.526          </td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-6-1"  
+class="td11">ascos </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-6-2"  
+class="td11">part of </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-6-3"  
+class="td11">0.519</td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-7-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-7-1"  
+class="td11">ascos                    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-7-2"  
+class="td11">kind of    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-7-3"  
+class="td11">0.463          </td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-8-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-8-1"  
+class="td11">lhn </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-8-2"  
+class="td11">part of </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-8-3"  
+class="td11">0.460</td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-9-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-9-1"  
+class="td11">rss2                     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-9-2"  
+class="td11">part of    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-9-3"  
+class="td11">0.460          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-10-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-10-1"  
+class="td11">katz                     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-10-2"  
+class="td11">kind of    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-10-3"  
+class="td11">0.458          </td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-11-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-11-1"  
+class="td11">inverse log weighted</td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-11-2"  
+class="td11">part of </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-11-3"  
+class="td11">0.453</td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-12-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-12-1"  
+class="td11">dice                     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-12-2"  
+class="td11">part of    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-12-3"  
+class="td11">0.401          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-13-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-13-1"  
+class="td11">cosine                  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-13-2"  
+class="td11">part of    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-13-3"  
+class="td11">0.382          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-14-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-14-1"  
+class="td11">dice                     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-14-2"  
+class="td11">kind of    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-14-3"  
+class="td11">0.371          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-15-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-15-1"  
+class="td11">jaccard                 </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-15-2"  
+class="td11">part of    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-15-3"  
+class="td11">0.351          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-16-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-16-1"  
+class="td11">cosine                  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-16-2"  
+class="td11">kind of    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-16-3"  
+class="td11">0.320          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-17-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-17-1"  
+class="td11">inverse log weighted</td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-17-2"  
+class="td11">kind of    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-17-3"  
+class="td11">0.299          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-18-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-18-1"  
+class="td11">jaccard                 </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-18-2"  
+class="td11">kind of    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-18-3"  
+class="td11">0.286          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-19-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-19-1"  
+class="td11">rss2                     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-19-2"  
+class="td11">kind of    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-19-3"  
+class="td11">0.263          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-20-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-20-1"  
+class="td11">lhn                      </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-20-2"  
+class="td11">kind of    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-20-3"  
+class="td11">0.239          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-21-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-21-1"  
+class="td11">cosine                  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-21-2"  
+class="td11">both       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-21-3"  
+class="td11">0.100          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-22-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-22-1"  
+class="td11">jaccard                 </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-22-2"  
+class="td11">both       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-22-3"  
+class="td11">0.100          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-23-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-23-1"  
+class="td11">dice                     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-23-2"  
+class="td11">both       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-23-3"  
+class="td11">0.092          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-24-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-24-1"  
+class="td11">rss2                     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-24-2"  
+class="td11">both       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-24-3"  
+class="td11">0.087          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-25-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-25-1"  
+class="td11">inverse log weighted</td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-25-2"  
+class="td11">both       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-25-3"  
+class="td11">0.086          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-26-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-26-1"  
+class="td11">                 </td></tr></table></div>
+<br /> <div class="caption" 
+><span class="id">Table&#x00A0;3.1: </span><span  
+class="content"> Relational Similarity Analysis (RSA) using graph similarity metrics for each of the kind
+of, part of, and combined ("both") relationships to compare pairwise semantic similarity of brain
+images to spatial similarity (ascos = "Asymmetric network Structure COntext Similarity", lhn =
+"Leicht-Holme-Newman"</span></div><!--tex4ht:label?: x25-690021 -->
+<!--l. 1620--><p class="noindent" >.
+                                                                                   
+
+                                                                                   
+   </div><hr class="endfloat" />
+   </div>
+                                                                                   
+
+                                                                                   
+   <!--l. 1623--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse14.html" >next</a>] [<a 
+href="mainse12.html" >prev</a>] [<a 
+href="mainse12.html#tailmainse12.html" >prev-tail</a>] [<a 
+href="mainse13.html" >front</a>] [<a 
+href="mainch3.html#mainse13.html" >up</a>] </p></div>
+<!--l. 1623--><p class="indent" >   <a 
+ id="tailmainse13.html"></a>   
+</body></html> 

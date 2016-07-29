@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Introduction</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,index=2,3,next,frames --> 
+<meta name="src" content="main.tex"> 
+<meta name="date" content="2016-07-29 20:29:00"> 
+<link rel="stylesheet" type="text/css" href="main.css"> 
+</head><body 
+>
+   <!--l. 619--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse7.html" >next</a>] [<a 
+href="mainch2.html" >prev</a>] [<a 
+href="mainch2.html#tailmainch2.html" >prev-tail</a>] [<a 
+href="#tailmainse6.html">tail</a>] [<a 
+href="mainch2.html#mainse6.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">2.1   </span> <a 
+ id="x17-260002.1"></a>Introduction</h3>
+<!--l. 621--><p class="noindent" >In this chapter, I present work [<span 
+class="ec-lmbx-10">? </span>] to suggest that there are optimal methods for spatial comparison of of
+whole-brain statistical maps (Specific Aim #1, Section 1.5). I begin with an introduction to spatial
+comparison of whole-brain maps in functional magnetic resonance imaging (fMRI) research (fMRI) to
+convince of the importance for identifying intelligent methods for image comparison for meta-analysis and
+reproducibility that are in line with the goals of the research.
+<!--l. 628--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">2.1.1   </span> <a 
+ id="x17-270002.1.1"></a>Spatial Comparison of Statistical Brain Maps</h4>
+<!--l. 630--><p class="noindent" >The computation of similarity between images is an increasingly important component of neuroimaging
+analyses. In the context of reproducibility, statistical brain maps must be compared to evaluate if a new
+                                                                                   
+
+                                                                                   
+result has successfully replicated a previous one. For approaches that involve clustering, a distance or
+similarity matrix is commonly defined that makes a comparison between all pairwise maps. For
+meta-analytic decoding [<span 
+class="ec-lmbx-10">? </span>], one must be able to identify similarity between the target image and each
+image in the relevant database.
+<!--l. 639--><p class="indent" >   One challenge in computation of image similarity is the presence of empty (zero-valued) voxels due to
+thresholding. The clearest example comes from coordinate-based meta-analysis, where voxels outside of
+regions with activation peaks will have a zero value. However, the problem arises in other domains as well,
+such as the NeuroVault database [<span 
+class="ec-lmbx-10">? </span>]. The maps in NeuroVault represent a broad range of
+statistical tests, and while a warning is issued when a user uploads a thresholded map, there is no
+hard restriction. At the time of writing this thesis, for the 2581 publicly available group-level
+maps in the NeuroVault database, 657 (~25.5%) have fewer than 25% of non-empty voxels
+observed within an MNI template brain mask, meaning they are thresholded images. Part
+of the work behind this dissertation was driven by the need for NeuroVault to allow for the
+ability to compare a single result map to all others in the database. This reality presented with
+the challenge of performing image comparison in the presence of thresholding choices that
+may introduce many &#8220;faux zeros,&#8221; or even eliminate negative values completely. The impact
+of these empty voxels on image comparison was not understood, giving the impetus for this
+work.
+                                                                                   
+
+                                                                                   
+   <!--l. 658--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse7.html" >next</a>] [<a 
+href="mainch2.html" >prev</a>] [<a 
+href="mainch2.html#tailmainch2.html" >prev-tail</a>] [<a 
+href="mainse6.html" >front</a>] [<a 
+href="mainch2.html#mainse6.html" >up</a>] </p></div>
+<!--l. 658--><p class="indent" >   <a 
+ id="tailmainse6.html"></a>   
+</body></html> 

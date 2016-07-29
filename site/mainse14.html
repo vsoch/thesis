@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Discussion</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,index=2,3,next,frames --> 
+<meta name="src" content="main.tex"> 
+<meta name="date" content="2016-07-29 20:29:00"> 
+<link rel="stylesheet" type="text/css" href="main.css"> 
+</head><body 
+>
+   <!--l. 1623--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse15.html" >next</a>] [<a 
+href="mainse13.html" >prev</a>] [<a 
+href="mainse13.html#tailmainse13.html" >prev-tail</a>] [<a 
+href="#tailmainse14.html">tail</a>] [<a 
+href="mainch3.html#mainse14.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">3.4   </span> <a 
+ id="x26-700003.4"></a>Discussion</h3>
+<!--l. 1625--><p class="noindent" >I have demonstrated that semantic comparison of images, both separately from the voxelwise spatial data
+and in an encoding framework, is useful for the classification of cognitive concepts, and contrasts from task
+paradigms. The basic use case for this work is in a classification framework, specifically providing a means
+to predict a cognitive concept or contrast given a brain map, or a brain map from a cognitive concept or
+contrast. Another use cases for this kind of framework would be to assess the contribution of a new brain
+imaging result, possibly with task or contrast unknown, to the entire set of concepts defined in the
+ontology.
+<!--l. 1636--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">3.4.1   </span> <a 
+ id="x26-710003.4.1"></a>Semantic image comparison in a classification framework</h4>
+<!--l. 1638--><p class="noindent" >Semantic labels to tag brain statistical maps with cognitive concepts to drive a classification task
+performed well above chance (0.814 accuracy compared to 0.47), giving strong support for the value of
+semantic labels for image classification. This model is ideal in that it is a multilabel procedure,
+as a single brain map can represent many cognitive processes. While a robust exploration of
+different graph metrics to optimize this classification is outside of the scope of this work, given
+the demonstrated value of semantic labels, I see this question as a primary interest for future
+work.
+<!--l. 1648--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">3.4.2   </span> <a 
+ id="x26-720003.4.2"></a>Comparison of semantic to spatial similarity</h4>
+<!--l. 1650--><p class="noindent" >Representational similarity analysis shows that semantically-derived comparison scores are
+well-comparable to spatially-derived pearson correlation coefficients, the strongest indicator in
+this paper that there is huge value in a semantically-based representation of brain maps. The
+leading metrics, katz, ascos,and Wang, share the common feature that derives a score based on
+the structure of the graph, suggesting that assertions about relationships between cognitive
+concepts are an essential component to calculate semantic similarity of images. While the other
+metrics consider local neighborhoods, these methods take into account neighbors deeper into the
+graph, implying that there is value in a graph structure that has breadth as well as depth.
+                                                                                   
+
+                                                                                   
+Looking specifically at RSA scores for Wang derived by subsetting the comparison matrix to
+images tagged for unique cognitive concepts, we see that over half (0.58, 25/43) of the cognitive
+atlas terms had RSA scores exceeding 0.50, indicative of strong correlation of semantic and
+spatial similarity. This result suggests that a subset of tasks and concepts that are described in
+functional neuroimaging have distinct spatial patterns of activation that can be identified in the
+algorithm by comparing the set of images tagged with the term, versus those not. This idea is
+supported by the observation that the weaker correlations seem to be for tasks and concepts that
+are intuitively harder to localize to distinct brain region(s), for example, &#8220;theory of mind,&#8221;
+and &#8220;feature comparison,&#8221; or &#8220;negative feedback processing&#8221; (RSA scores = 0.32, 0.34, -0.06
+respectively).
+<!--l. 1665--><p class="indent" >   Interestingly, our result supports the idea that distinct, specific labels (lower in the ontology tree) are
+more suitable for this task. For example, the &#8220;balloon analogue risk task (BART),&#8221; is a complicated task
+with many contrasts and concepts asserted to be measured by it (see it&#8217;s <a 
+href="http://www.cognitiveatlas.org/term/id/trm_4d559bcd67c18" >entry in the Cognitive Atlas</a>), and
+combination of all images asserted to belong to it produced semantic image comparisons that were not
+comparable to spatial image comparisons, assessed by RSA (RSA score=0.10). However, one
+of concepts that a contrast is asserted to measure (visual object detection) was much more
+comparable (RSA score=0.79). This suggests that semantic image comparisons may have their
+highest value not on the higher level of an entire task, but on a lower level, such as a contrast or
+concept, and this is logical because more specific tags likely indicate image sets with less spatial
+variance.
+<!--l. 1681--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">3.4.3   </span> <a 
+ id="x26-730003.4.3"></a>Limitations</h4>
+<!--l. 1683--><p class="noindent" >Ontology development is a careful and slow process, and so analysis is limited to describe the set of brain
+maps that were available in NeuroVault database. I recognize that the size of this image set is small, and
+that results will change as these image sets do. However, growth in these databases is badly needed. The
+open idea of the Cognitive Atlas is that participation is available to any researcher, and the
+integration into NeuroVault and publicly available libraries means ease of use to re-deploy
+methods to describe other datasets. The terms and relationships can be fine-tuned over time,
+and are open for discussion to the entire community. This original work provides a reasonable
+first-go at this process to demonstrate that such a framework is useful, and the result can
+be re-generated as the Cognitive Atlas and NeuroVault databases are updated. Toward this
+aim, I want to encourage researchers to upload statistical brain map results to the NeuroVault
+database, tag these maps with contrast images from the Cognitive Atlas, and continue to assist
+with development of the ontology at <a 
+href="http://www.cognitiveatlas.org" >http://www.cognitiveatlas.org</a>. I have developed a Github
+repo that uses continuous integration to dynamically generate an updated visualization of
+                                                                                   
+
+                                                                                   
+concepts defined in the Cognitive Atlas with tagged NeuroVault images to show these associations
+(<a 
+href="https://github.com/vsoch/semantic-image-comparison-ci" >https://github.com/vsoch/semantic-image-comparison-ci</a>).
+                                                                                   
+
+                                                                                   
+   <!--l. 1705--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse15.html" >next</a>] [<a 
+href="mainse13.html" >prev</a>] [<a 
+href="mainse13.html#tailmainse13.html" >prev-tail</a>] [<a 
+href="mainse14.html" >front</a>] [<a 
+href="mainch3.html#mainse14.html" >up</a>] </p></div>
+<!--l. 1705--><p class="indent" >   <a 
+ id="tailmainse14.html"></a>   
+</body></html> 

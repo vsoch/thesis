@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Interpretation of neuroimaging results to synthesize our understanding</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,index=2,3,next,frames --> 
+<meta name="src" content="main.tex"> 
+<meta name="date" content="2016-07-29 20:29:00"> 
+<link rel="stylesheet" type="text/css" href="main.css"> 
+</head><body 
+>
+   <!--l. 206--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse3.html" >next</a>] [<a 
+href="mainse1.html" >prev</a>] [<a 
+href="mainse1.html#tailmainse1.html" >prev-tail</a>] [<a 
+href="#tailmainse2.html">tail</a>] [<a 
+href="mainch1.html#mainse2.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">1.2   </span> <a 
+ id="x12-120001.2"></a>Interpretation of&#x00A0;neuroimaging results to synthesize our understanding</h3>
+<!--l. 207--><p class="noindent" >Functional brain imaging, as was previously stated, is the primary avenue to non-invasively study human
+brain function that leads to behavior. Thus, understanding the basis of aberrant behavior to help the
+mental health crisis is contingent upon synthesizing the compendium of neuroimaging work to make
+associations between functional brain networks and cognitive processes. This synthesis is the first
+action when the neuroimaging scientist obtains a new result, a statistical brain map with effect
+sizes that reflect a cognitive process of interest. The goals of the researcher in this process are
+many:
+     <ul class="itemize1">
+     <li class="itemize">use results from different studies to better understand a question of interest
+     </li>
+     <li class="itemize">accumulate evidence to gain statistical power
+     </li>
+     <li class="itemize">determine the association of a brain region to a task of interest (reverse inference)
+     </li>
+     <li class="itemize">assess the probability or likelihood of a new result based on previous ones</li></ul>
+<!--l. 230--><p class="indent" >   If a single result is simply a three dimensional matrix of numbers, the above tasks can be
+understood as a &#8220;statistical pooling of information&#8221; [<span 
+class="ec-lmbx-10">? </span>]. In fact, this is done on many levels in
+neuroimaging science. When we want to understand how a group of individuals with some
+phenotype may be different&#x00A0;in their brain function&#x00A0;from another group, we &#8220;pool&#8221; individual brain
+maps into a group map to make higher level inferences [<span 
+class="ec-lmbx-10">? </span>]. When we want to compare across
+studies, we then &#8220;pool&#8221; these group maps to perform meta-analysis [<span 
+class="ec-lmbx-10">? </span>]. To better understand
+how these comparisons have been historically done, it is necessary to understand the influence
+of the data that we decide to pool on the inferences that we can make, and specifically, the
+tradeoff that is made between resolution of the meta-analysis and the interpretability of the
+result.
+                                                                                   
+
+                                                                                   
+<!--l. 245--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.2.1   </span> <a 
+ id="x12-130001.2.1"></a>Coordinate and voxelwise approaches to compare images</h4>
+<!--l. 247--><p class="noindent" >This simple task of image comparison has flexibly adapted to match the availability of data. There are two
+general approaches: coordinate-based meta analysis (CBMA), and image-based meta-analysis (IBMA).&#x00A0;A
+brain map is a three dimensional matrix of numbers, where each x,y,z coordinate in this space, called a
+&#8220;voxel&#8221; might hold a value that represents the result of a statistical test of interest for that location. To
+standardize this coordinate space, the neuroimaging community has developed several standard &#8220;coordinate
+spaces,&#8221; including Talaraich and MNI, the first being developed from a single individual [<span 
+class="ec-lmbx-10">? </span>], and the latter
+a more proper probabilistic atlas derived from hundreds of individuals [<span 
+class="ec-lmbx-10">? ? </span>]. Having these standard
+coordinates led to the reporting of results in papers by way of tables of coordinates (an example is
+provided in Figure&#x00A0;<a 
+href="#x12-130011">1.1<!--tex4ht:ref: fig:11 --></a>), with detail added about the coordinate being in Talaraich or MNI
+space.
+<!--l. 262--><p class="indent" >   <hr class="figure"><div class="figure" 
+>
+                                                                                   
+
+                                                                                   
+<a 
+ id="x12-130011"></a>
+                                                                                   
+
+                                                                                   
+<div class="center" 
+>
+<!--l. 263--><p class="noindent" >
+
+<!--l. 264--><p class="noindent" ><img 
+src="images/figure11.png" alt="PIC"  
+></div>
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;1.1: </span><span  
+class="content"> Coordinate Reporting: coordinates in the MNI or Talaraich standard brain spaces are
+typically reported in a tabular format in manuscripts [<span 
+class="ec-lmbx-10">? </span>].</span></div><!--tex4ht:label?: x12-130011 -->
+                                                                                   
+
+                                                                                   
+<!--l. 267--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 269--><p class="indent" >   Back in the early days when finding these &#8220;voxelwise&#8221; statistical map results on the internet was a
+rarity, synthesizing results meant parsing these standardized coordinates from the papers to find
+commonality of results. A coordinated effort to do this led to the development of the BrainMap database [<span 
+class="ec-lmbx-10">?</span>
+], a resource that has allowed for more than 500 publications at the time of writing this dissertation. Tools
+such as GingerALE [<span 
+class="ec-lmbx-10">? </span>] to deploy a method called &#8220;activation likelihood estimation&#8221; [<span 
+class="ec-lmbx-10">? </span>] then empowered
+researchers to manually enter significant coordinates across studies to summarize a set of interest.&#x00A0;The
+requirement for manual entry of these results called for more automated approaches, and the
+pioneering NeuroSynth [<span 
+class="ec-lmbx-10">? </span>] made this possible. The NeuroSynth database is a publicly available
+collection of coordinates that are automatically parsed from online neuroimaging literature. &#x00A0;While
+BrainMap covers just over 2,700 papers, NeuroSynth has expanded to cover over 13,000 in
+only five years. Given this expansive set of data, what methods are available to synthesize
+it?
+   <h5 class="subsubsectionHead"><a 
+ id="x12-140001.2.1"></a>Coordinate Based Meta Analysis (CBMA)</h5>
+<!--l. 289--><p class="noindent" >Generally, CBMA approaches include quantitative analysis of specificity [<span 
+class="ec-lmbx-10">? </span>], chi-square tests, analysis
+of reported peak density differences, and pattern classification [<span 
+class="ec-lmbx-10">? ? ? </span>]. While a quantitative
+assessment of p-values to perform meta-analysis is useful for many domains of research [<span 
+class="ec-lmbx-10">? </span>],
+these methods proceed without the benefit of a key source of information, the spatial maps
+themselves. I will first review CBMA methods, followed by IBMA. I will discuss the caveats of
+these approaches, and how we must transition to a large-data, reproducible image comparison
+framework.
+<!--l. 299--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x12-150001.2.1"></a><span 
+class="ec-lmbx-10">Analysis of Reported Peak Density Differences</span></span>
+   These approaches generally&#x00A0;map coordinate results&#x00A0;into a standard brain space to find areas of
+significant overlap&#x00A0;with higher values, called &#8220;peaks.&#8221; These faux-maps are treated as representations of the
+original spatial maps from which they were derived. A typical method might count peak activations in each
+voxel, convolve the resulting histogram with a kernel (e.g., sphere or Gaussian), and compare
+the result to some null distribution. The null hypothesis is that the distribution of peaks is
+randomly and uniformly distributed. Thus, if the same general method is performed with randomly
+placed points, this forms our null distribution for comparison. A method such as Monte Carlo
+simulation might be used to calculate a p-value, and assess the significance of the difference
+between the result and the null [<span 
+class="ec-lmbx-10">? </span>]. Specific implementations of this process are derivations of
+this general approach, using different kernels and final metrics for comparing the null to the
+result.
+                                                                                   
+
+                                                                                   
+<!--l. 317--><p class="indent" >   <span class="subparagraphHead"> <a 
+ id="x12-160001.2.1"></a><span 
+class="ec-lmbx-10">Kernel Density Analysis (KDA)</span></span>
+   In KDA, the smoothing kernel applied to the data is spherical, typically with a radius of 10-15mm. A
+value in a KDA map can be understood as the number of peaks within a radius of some R millimeters away
+from the spatial location. These maps can be divided by the volume of the kernel to derive a
+density in peaks per cubic millimeters. For KDA, we perform the procedure with randomly
+placed points, and compare the top density value from the random points to our actual data [<span 
+class="ec-lmbx-10">?</span>
+].
+<!--l. 327--><p class="indent" >   <span class="subparagraphHead"> <a 
+ id="x12-170001.2.1"></a><span 
+class="ec-lmbx-10">Activation Likelihood Estimation (ALE)</span></span>
+   The ALE approach uses a Gaussian kernel, with width specified by a full width half maximum
+(FWHM) value, such as 10 millimeters. In the ALE approach, a smoothed value in the map can be
+understood as probabilities of each peak being within some R millimeters from the spatial location. The
+union of these values is computed to derive the activation likelihood, the score of interest that is an
+estimate of at least one peak activation being within the spatial location (&#8220;voxel&#8221;) of interest. Assessment
+of significance means identifying the voxels where the union of probabilities is greater than chance
+probability.
+<!--l. 339--><p class="indent" >   <span class="subparagraphHead"> <a 
+ id="x12-180001.2.1"></a><span 
+class="ec-lmbx-10">Multi-level Kernel Density Analysis (MKDA)</span></span>
+   In the MKDA approach, a single unit of analysis is a contrast map from a study.&#x00A0;The same procedure is
+done as outlined previously, however instead of generating maps that reflect the frequency of activations,
+the output is a binary &#8220;contrast indicator&#8221; map (a value of 1 indicates a peak within a radius of some R
+millileters from a spatial location, and 0 not) that can be weighted by a metric relative to the study to
+produce a density map, For example, the indicator maps could be weighted by study quality and
+sample size to get a density map. The null hypothesis is that the distribution of peaks within
+each contrast indicator map is randomly distributed, however the MKDA approach places
+entire clusters (and not random points). A significant result then can be understood as finding
+some proportion of the indicator map being consistently activated within R millimeters at a
+rate greater than expected by chance [<span 
+class="ec-lmbx-10">? </span>]. The benefit of MKDA is that it can be used to
+compare two conditions, meaning doing the process separately with two different data sets, and
+saving maximum values for the differences between the maps at each iteration of Monte Carlo
+simulation. MKDA also improves upon ALE and KDA in that it has been shown empirically
+to better control false positives. Thresholding on the distribution of saved differences then
+creates a difference map. However, the results of these difference maps don&#8217;t say anything about
+activation in the regions being associated with either of the contrasts, calling for a chi-squared
+approach.
+                                                                                   
+
+                                                                                   
+<!--l. 365--><p class="indent" >   <span class="subparagraphHead"> <a 
+ id="x12-190001.2.1"></a><span 
+class="ec-lmbx-10">Chi-Squared: NeuroSynth</span></span>
+   The chi-squared approach allows for comparison of observed activation frequencies against a null
+hypothesis. The best deployed example is via the NeuroSynth database. NeuroSynth collects and organizes
+voxelwise coordinate data relevant to brain activity, and measures the association&#x00A0;between these
+coordinates and terms from the paper&#x00A0;such as &#8220;anxiety&#8221; or &#8220;memory.&#8221; The automated approach is logical
+to make the assumption that a publication related to the experience of &#8220;anxiety&#8221; is likely to have a high
+frequency of mentions of the term.&#x00A0;The original NeuroSynth algorithm, for each spatial location in the
+human brain, generated a 2x2 contingency table of counts to indicate if activation is present or absent
+when a specific behavior term is present or absent. The current algorithm takes an approach similar to
+KDA, first convolving the data with a 6mm sphere to smooth the activations spatially, and then
+generating counts from this map. A Chi-Square test of independence is then used to determine
+if there is a significant dependence between the term and activation, and p-values are false
+discovery rate (FDR)-adjusted to account for multiple hypothesis testing at a threshold of
+0.05 [<span 
+class="ec-lmbx-10">? </span>]. The initial dataset relied upon parsing of full-text, publicly available manuscripts,
+and the most recent version (<a 
+href="https://github.com/neurosynth/neurosynth/releases/tag/0.3.3" >https://github.com/neurosynth/neurosynth/releases/tag/0.3.3</a>)
+has transitioned to parsing more readily available abstracts and maintained the quality of the
+result.
+<!--l. 390--><p class="indent" >   These approaches make strong assumptions that studies do not differ in peaks reported, location,
+smoothness, false positive rates, and statistical power. Specifically, for ALE and KDA, a single study with
+many reports can highly influence the result, and we make the incorrect assumption that peaks are
+independent within and across studies until the null. These approaches yield results with many false
+positives, and further, we cannot infer from any of these results that repeating a study will produce
+activation in the identified regions. While they have been useful, these drawbacks call for utilizing the
+original spatial maps to drive the meta-analysis.
+<!--l. 401--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x12-200001.2.1"></a>Image-based Meta Analysis (IBMA)</h5>
+<!--l. 403--><p class="noindent" >IBMA, in using the whole-brain statistical map, has historically been treated as a &#8220;gold standard&#8221; for
+assessing coordinate-based approaches. In a pioneering study [<span 
+class="ec-lmbx-10">? </span>], Salimi et al compared the assortment of
+CBMA approaches (Figure&#x00A0;<a 
+href="#x12-200012">1.2<!--tex4ht:ref: fig:12 --></a>).
+<!--l. 408--><p class="indent" >   <hr class="figure"><div class="figure" 
+>
+                                                                                   
+
+                                                                                   
+<a 
+ id="x12-200012"></a>
+                                                                                   
+
+                                                                                   
+<div class="center" 
+>
+<!--l. 409--><p class="noindent" >
+
+<!--l. 410--><p class="noindent" ><img 
+src="images/figure12.png" alt="PIC"  
+></div>
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;1.2: </span><span  
+class="content"> Figure 1 from Salimi et. al. that illustrates a 4-study, 1-dimensional meta-analysis.
+&#8220;A true signal (dashed line) is created and four simulated statistic &#8216;images&#8217; are created by adding
+smoothed white noise to the true signal (bold lines in the first column of the first four rows). To
+apply CBMA to these simulated 1D studies, local maxima (foci) are extracted from each observed
+signal (circles on the bold lines). Next, the locations of these foci are fed into each CBMA technique.
+In the last row, the results of each method in reproducing the true signal using the foci are shown.
+As can be seen, averaging over the complete signals (as IBMA does) yields a better estimate of truth
+compared to using local maxima (CBMA). ALE results in a smooth estimate (due to its Gaussian
+kernel) which KDA and MKDA are rougher (due to its spherical kernel). Note that the &#8216;true&#8217; profile
+is generated as a sum of Gaussian densities, which is most consistent with the ALE method.&#8221;</span></div><!--tex4ht:label?: x12-200012 -->
+                                                                                   
+
+                                                                                   
+<!--l. 426--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 428--><p class="indent" >   These plots [<span 
+class="ec-lmbx-10">? </span>] compare IBMA to each of ALE, KDE, and MKDA. In the first column, the
+gold-standard IBMA uses large black dots to show local maxima that are reported in the whole-brain
+maps. The second column shows results from ALE. The result is more of a curve because the ALE statistic
+reflects a probability value that at least one peak is within some R millimeters of each voxel. The third
+column is KDA, which gives us a value at each voxel that represents the number of peaks within R
+millimeters of that voxel, and dividing by the voxel resolution gives us a &#8220;density.&#8221; Finally, the last
+column is MKDA, which is the same as KDA, but the procedure is done for each study, and the
+resulting &#8220;contrast indicator maps&#8221; indicate the presence or absence of a peak within some R
+millimeters.
+<!--l. 442--><p class="indent" >   Each of these plots uses simulated data. The &#8220;true&#8221; signal is the dashed line, and the bold lines in the
+first column of each row are that signal with added noise. The dots in each plot would be the
+&#8220;extracted peak coordinates&#8221; reported in some papers. We can then look at each row to see
+how KDA, ALE, and MKDA perform on just the single &#8220;study&#8221; data, and the last row shows
+how the methods perform for meta-analysis across all the studies. The figure shows that the
+IBMA (averaging over the images) produces a signal that is closest to the original data, an
+improvement over the CBMA approaches. This investigation sets up compelling evidence that
+even a simple metric that utilizes the entire spatial map is an improvement over traditional
+CBMA approaches, and encourages the field to move in that direction. In fact, the paper is quite
+foretelling:
+<!--l. 464--><p class="indent" >   <span 
+class="ec-lmri-10">&#8220;Another promising future direction is the development of meta-analysis-based classifier techniques that</span>
+<span 
+class="ec-lmri-10">will allow quantitative inferences to be made from brain activation to psychological states. </span><span 
+class="ec-lmri-10">&#x00A0;This kind of</span>
+<span 
+class="ec-lmri-10">analysis will allow us to make formal predictions about psychological states based on brain activation.</span>
+<span 
+class="ec-lmri-10">Another exciting direction is that analyses across many study types can enable us to develop brain-based</span>
+<span 
+class="ec-lmri-10">psychological ontologies&#8212;that is, to group different kinds of tasks and psychological functions together based</span>
+<span 
+class="ec-lmri-10">on the similarity of their brain patterns.&#8221;</span>
+<!--l. 466--><p class="indent" >   This paragraph foreshadows things to come, specifically, the use of semantic knowledge and
+databases with whole-brain maps to make inferences between cognitive paradigm and psychological
+states.
+                                                                                   
+
+                                                                                   
+   <!--l. 470--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse3.html" >next</a>] [<a 
+href="mainse1.html" >prev</a>] [<a 
+href="mainse1.html#tailmainse1.html" >prev-tail</a>] [<a 
+href="mainse2.html" >front</a>] [<a 
+href="mainch1.html#mainse2.html" >up</a>] </p></div>
+<!--l. 470--><p class="indent" >   <a 
+ id="tailmainse2.html"></a>    
+</body></html> 

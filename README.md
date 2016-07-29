@@ -20,8 +20,9 @@ Then, you need to run the Docker image. You can either build it locally, or run 
 
       docker build -t vanessa/thesis .
 
-Now we are going to run the docker image, and map the local folder to it so that the generated files pop up in our present working directory. You can just run the script [generate.sh](generate.sh) to start the container, map the the present working directory, generate the site, and stop the container:
+Now we are going to run the docker image, and map the local folder to it so that the generated files pop up in our present working directory. You can just run the script [generate.sh](generate.sh) to start the container, map the the present working directory, generate the site, and stop the container. To make life easier, if you plan to put the thesis on the gh-pages associated with the repo, I'd check out that branch first:
 
+      git checkout -b gh-pages
       chmod u+x generate.sh
       bash generate.sh
 
@@ -121,9 +122,12 @@ What is really happening? Here are the basic commands. In a nutshell, we are sta
 This means that the entire generation of the site (and all the software needed to do it) is installed and run in the container, and we get to see and keep the output. Pretty neat!
 
 ### Output
-You will see new files in your present working directory, namely an `index.html` that redirects to the main content of your thesis in the `site` folder. In the `site` folder is a simple version of your thesis, in html form, with all the images and links as they should be. Then you simple need to add these files to a github pages branch.
+You will see new files in your present working directory, namely an `index.html` that redirects to the main content of your thesis in the `site` folder. In the `site` folder is a simple version of your thesis, in html form, with all the images and links as they should be. Then you simple need to add these files to a github pages branch. If you haven't yet, checkout a new gh-pages branch
 
       git checkout -b gh-pages
+
+If you're already on it, skip the above, and just add the site files to the gh-pages branch:
+
       git add site/
       git add index.html
       git push origin gh-pages

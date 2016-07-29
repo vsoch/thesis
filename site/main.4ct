@@ -1,0 +1,181 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{4}{x4-1000}{QQ2-4-1}{Preface}}{4}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{4}{Q1-4-2}{}{Preface}}{iv}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{5}{x5-2000}{QQ2-5-3}{Abstract}}{6}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{5}{Q1-5-4}{}{Abstract}}{vi}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{6}{x6-3000}{QQ2-6-5}{Acknowledgments}}{10}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{6}{Q1-6-6}{}{Acknowledgments}}{x}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{7}{x7-4000}{QQ2-7-7}{Contents}}{13}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{8}{x8-5000}{QQ2-8-8}{List of Tables}}{17}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{9}{x9-6000}{QQ2-9-9}{List of Figures}}{19}\relax 
+\doTocEntry\tocchapter{1}{\csname a:TocLink\endcsname{10}{x10-70001}{QQ2-10-10}{Introduction}}{3}\relax 
+\doTocEntry\tocsection{1.1}{\csname a:TocLink\endcsname{11}{x11-80001.1}{QQ2-11-11}{Understanding brain health}}{3}\relax 
+\doTocEntry\tocsubsection{1.1.1}{\csname a:TocLink\endcsname{11}{x11-90001.1.1}{QQ2-11-12}{The link between cognition and brain health}}{4}\relax 
+\doTocEntry\tocsubsection{1.1.2}{\csname a:TocLink\endcsname{11}{x11-100001.1.2}{QQ2-11-13}{Non-invasive brain imaging as a means to measure cognition}}{4}\relax 
+\doTocEntry\tocsubsection{1.1.3}{\csname a:TocLink\endcsname{11}{x11-110001.1.3}{QQ2-11-14}{The Cognitive Atlas}}{5}\relax 
+\doTocEntry\tocsection{1.2}{\csname a:TocLink\endcsname{12}{x12-120001.2}{QQ2-12-15}{Interpretation of\nobreakspace  {}neuroimaging results to synthesize our understanding}}{7}\relax 
+\doTocEntry\tocsubsection{1.2.1}{\csname a:TocLink\endcsname{12}{x12-130001.2.1}{QQ2-12-16}{Coordinate and voxelwise approaches to compare images}}{8}\relax 
+\doTocEntry\toclof{1.1}{\csname a:TocLink\endcsname{12}{x12-130011}{}{\ignorespaces  Coordinate Reporting: coordinates in the MNI or Talaraich standard brain spaces are typically reported in a tabular format in manuscripts \cite  {Boubela2015-ap}.}}{figure}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{12}{x12-140001.2.1}{QQ2-12-18}{Coordinate Based Meta Analysis (CBMA)}}{11}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{12}{x12-150001.2.1}{QQ2-12-19}{Analysis of Reported Peak Density Differences}}{11}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{12}{x12-160001.2.1}{QQ2-12-20}{Kernel Density Analysis (KDA)}}{12}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{12}{x12-170001.2.1}{QQ2-12-21}{Activation Likelihood Estimation (ALE)}}{12}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{12}{x12-180001.2.1}{QQ2-12-22}{Multi-level Kernel Density Analysis (MKDA)}}{12}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{12}{x12-190001.2.1}{QQ2-12-23}{Chi-Squared: NeuroSynth}}{13}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{12}{x12-200001.2.1}{QQ2-12-24}{Image-based Meta Analysis (IBMA)}}{13}\relax 
+\doTocEntry\toclof{1.2}{\csname a:TocLink\endcsname{12}{x12-200012}{}{\ignorespaces  Figure 1 from Salimi et. al. that illustrates a 4-study, 1-dimensional meta-analysis. ``A true signal (dashed line) is created and four simulated statistic `images' are created by adding smoothed white noise to the true signal (bold lines in the first column of the first four rows). To apply CBMA to these simulated 1D studies, local maxima (foci) are extracted from each observed signal (circles on the bold lines). Next, the locations of these foci are fed into each CBMA technique. In the last row, the results of each method in reproducing the true signal using the foci are shown. As can be seen, averaging over the complete signals (as IBMA does) yields a better estimate of truth compared to using local maxima (CBMA). ALE results in a smooth estimate (due to its Gaussian kernel) which KDA and MKDA are rougher (due to its spherical kernel). Note that the `true' profile is generated as a sum of Gaussian densities, which is most consistent with the ALE method.''}}{figure}\relax 
+\doTocEntry\tocsection{1.3}{\csname a:TocLink\endcsname{13}{x13-210001.3}{QQ2-13-26}{Large Scale Image Comparison}}{17}\relax 
+\doTocEntry\tocsubsection{1.3.1}{\csname a:TocLink\endcsname{13}{x13-220001.3.1}{QQ2-13-27}{Spatial and semantic understanding}}{18}\relax 
+\doTocEntry\tocsection{1.4}{\csname a:TocLink\endcsname{14}{x14-230001.4}{QQ2-14-28}{Informed Image Comparison}}{19}\relax 
+\doTocEntry\tocsection{1.5}{\csname a:TocLink\endcsname{15}{x15-240001.5}{QQ2-15-29}{Specific Aims}}{20}\relax 
+\doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{16}{x16-250002}{QQ2-16-30}{Spatial Image Comparison}}{24}\relax 
+\doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{17}{x17-260002.1}{QQ2-17-31}{Introduction}}{24}\relax 
+\doTocEntry\tocsubsection{2.1.1}{\csname a:TocLink\endcsname{17}{x17-270002.1.1}{QQ2-17-32}{Spatial Comparison of Statistical Brain Maps}}{24}\relax 
+\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{18}{x18-280002.2}{QQ2-18-33}{Method}}{26}\relax 
+\doTocEntry\tocsubsection{2.2.1}{\csname a:TocLink\endcsname{18}{x18-290002.2.1}{QQ2-18-34}{Data Source}}{26}\relax 
+\doTocEntry\tocsubsection{2.2.2}{\csname a:TocLink\endcsname{18}{x18-300002.2.2}{QQ2-18-35}{Contrast Selection and Statistical Map Generation}}{27}\relax 
+\doTocEntry\tocsubsection{2.2.3}{\csname a:TocLink\endcsname{18}{x18-310002.2.3}{QQ2-18-36}{Similarity Metrics}}{27}\relax 
+\doTocEntry\tocsubsection{2.2.4}{\csname a:TocLink\endcsname{18}{x18-320002.2.4}{QQ2-18-37}{Empty Voxels in Brain Statistical Maps}}{27}\relax 
+\doTocEntry\tocsubsection{2.2.5}{\csname a:TocLink\endcsname{18}{x18-330002.2.5}{QQ2-18-38}{Strategies to Handle Empty Voxels}}{28}\relax 
+\doTocEntry\tocsubsection{2.2.6}{\csname a:TocLink\endcsname{18}{x18-340002.2.6}{QQ2-18-39}{Assessing Influence of Thresholding on Classification Accuracy}}{28}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{18}{x18-350002.2.6}{QQ2-18-40}{Extraction of Pairwise Scores}}{28}\relax 
+\doTocEntry\tocsubsection{2.2.7}{\csname a:TocLink\endcsname{18}{x18-360002.2.7}{QQ2-18-41}{Validation}}{28}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{18}{x18-370002.2.7}{QQ2-18-42}{Assessment of Empty Voxels on Classification Accuracy}}{29}\relax 
+\doTocEntry\toclof{2.1}{\csname a:TocLink\endcsname{18}{x18-370011}{}{\ignorespaces  Data generation and analysis process. A subset of 465 datasets from the Human Connectome Project (subjects) is used to generate 47 contrast maps (group maps) for each of groups A and B for 500 subsamples. Within each subsample, an unthresholded image from A is compared with each thresholded image from B with a particular similarity metric and comparison strategy applied. Each image from A is then assigned the predicted class for the max. arg from the set of B, and accuracy is calculated for the subsample.}}{figure}\relax 
+\doTocEntry\tocsection{2.3}{\csname a:TocLink\endcsname{19}{x19-380002.3}{QQ2-19-44}{Results}}{33}\relax 
+\doTocEntry\tocsubsection{2.3.1}{\csname a:TocLink\endcsname{19}{x19-390002.3.1}{QQ2-19-45}{Assessing the Influence of Thresholding}}{33}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{19}{x19-400002.3.1}{QQ2-19-46}{Score Distributions}}{33}\relax 
+\doTocEntry\toclof{2.2}{\csname a:TocLink\endcsname{19}{x19-400012}{}{\ignorespaces  The size of the mask across different thresholds for complete case analysis (cca) and single value imputation (svi).}}{figure}\relax 
+\doTocEntry\toclof{2.3}{\csname a:TocLink\endcsname{19}{x19-400023}{}{\ignorespaces  Accuracy of image contrast classification at varying levels of image thresholding, for comparison of an unthresholded image against a set of images at each threshold, including positive and negative values (left) and positive values only (right). Complete case analysis (CCA) with a Pearson score had a maximum accuracy of 0.984 for a threshold of Z = +/- 1.0 (0.983, 0.985), outperforming single-value imputation (SVI).}}{figure}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{19}{x19-410002.3.1}{QQ2-19-49}{Thresholding Effects on Classification Accuracy}}{39}\relax 
+\doTocEntry\toclof{2.4}{\csname a:TocLink\endcsname{19}{x19-410014}{}{\ignorespaces  Accuracy of image contrast classification at varying levels of thresholding, for the worst performing image, "0-back body," from the working memory task. Accuracy peaked at a threshold of Z = +/- 1.0 for complete case analysis with a Pearson score and at a threshold of Z = + 2.0 for complete case analysis with a Spearman score for each of positive and negative values (left) and positive values only (right).}}{figure}\relax 
+\doTocEntry\tocsubsection{2.3.2}{\csname a:TocLink\endcsname{19}{x19-420002.3.2}{QQ2-19-51}{Image Classification}}{42}\relax 
+\doTocEntry\toclof{2.5}{\csname a:TocLink\endcsname{19}{x19-420015}{}{\ignorespaces   Mean accuracy +/- 1.0 standard deviation for each contrast across 500 random folds for the optimally performing threshold (Z = +/- 1.0), direction (positive and negative), comparison strategy (complete case analysis) and similarity metric (Pearson score). Interactive confusion matrices for all thresholds, comparison strategies, and similarity metrics are available (\href  {http://vsoch.github.io/image-comparison-thresholding}{http://vsoch.github.io/image-comparison-thresholding})   }}{figure}\relax 
+\doTocEntry\tocsection{2.4}{\csname a:TocLink\endcsname{20}{x20-430002.4}{QQ2-20-53}{Discussion}}{46}\relax 
+\doTocEntry\tocsubsection{2.4.1}{\csname a:TocLink\endcsname{20}{x20-440002.4.1}{QQ2-20-54}{Limitations}}{48}\relax 
+\doTocEntry\tocsection{2.5}{\csname a:TocLink\endcsname{21}{x21-450002.5}{QQ2-21-55}{Conclusion}}{50}\relax 
+\doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{22}{x22-460003}{QQ2-22-56}{Semantic Image Comparison}}{53}\relax 
+\doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{23}{x23-470003.1}{QQ2-23-57}{Semantic Comparison of Statistical Brain Maps}}{53}\relax 
+\doTocEntry\tocsection{3.2}{\csname a:TocLink\endcsname{24}{x24-480003.2}{QQ2-24-58}{Methods}}{55}\relax 
+\doTocEntry\tocsubsection{3.2.1}{\csname a:TocLink\endcsname{24}{x24-490003.2.1}{QQ2-24-59}{Overview of Open Infrastructure}}{55}\relax 
+\doTocEntry\toclof{3.1}{\csname a:TocLink\endcsname{24}{x24-490011}{}{\ignorespaces   Overview of the approach. Group statistical brain maps annotated with Cognitive Atlas concepts come from the NeuroVault database (top left), and concept relationships are represented in the Cognitive Atlas (bottom right). Spatial similarity is compared to purely semantic similarity using representational similarity analysis (top right), and a classification encoding model is used to test the predictive ability of semantic annotations (bottom right). An encoding model is generated at each voxel to predict a vector of 93 image voxels (Y) using concept labels (X) excluding two held out images, generating a vector of 132 coefficients (R) for each of v voxels. These vectors can be assembled into a matrix (R) to generate a predicted image (Yp) using a held out concept vector (Xn).   }}{figure}\relax 
+\doTocEntry\tocsubsection{3.2.2}{\csname a:TocLink\endcsname{24}{x24-500003.2.2}{QQ2-24-61}{Data and Curation}}{58}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{24}{x24-510003.2.2}{QQ2-24-62}{NeuroVault}}{58}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{24}{x24-520003.2.2}{QQ2-24-63}{Cognitive Atlas}}{58}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{24}{x24-530003.2.2}{QQ2-24-64}{Concept association with contrasts}}{58}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{24}{x24-540003.2.2}{QQ2-24-65}{Definition of relationships in Cognitive Atlas}}{59}\relax 
+\doTocEntry\tocsubsection{3.2.3}{\csname a:TocLink\endcsname{24}{x24-550003.2.3}{QQ2-24-66}{Semantic image comparison in a classification framework}}{59}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{24}{x24-560003.2.3}{QQ2-24-67}{Prediction of whole brain statistical maps using cognitive concepts}}{60}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{24}{x24-570003.2.3}{QQ2-24-68}{Classifier Validation}}{61}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{24}{x24-580003.2.3}{QQ2-24-69}{Learned Concept Map Validation}}{61}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{24}{x24-590003.2.3}{QQ2-24-70}{Prediction of coordinate-based statistical brain maps using cognitive concepts}}{62}\relax 
+\doTocEntry\tocsubsection{3.2.4}{\csname a:TocLink\endcsname{24}{x24-600003.2.4}{QQ2-24-71}{Comparison of semantic to spatial similarity}}{63}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{24}{x24-610003.2.4}{QQ2-24-72}{Semantic Comparison of Graphs}}{63}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{24}{x24-620003.2.4}{QQ2-24-73}{Derivation of spatial similarity matrix}}{65}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{24}{x24-630003.2.4}{QQ2-24-74}{Representational similarity analysis}}{65}\relax 
+\doTocEntry\tocsection{3.3}{\csname a:TocLink\endcsname{25}{x25-640003.3}{QQ2-25-75}{Results}}{67}\relax 
+\doTocEntry\tocsubsection{3.3.1}{\csname a:TocLink\endcsname{25}{x25-650003.3.1}{QQ2-25-76}{Semantic image comparison in a classification framework}}{67}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{25}{x25-660003.3.1}{QQ2-25-77}{Prediction of whole-brain statistical maps using cognitive concepts}}{67}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{25}{x25-670003.3.1}{QQ2-25-78}{Learned Concept Map Validation}}{67}\relax 
+\doTocEntry\toclof{3.2}{\csname a:TocLink\endcsname{25}{x25-670012}{}{\ignorespaces  Concepts associated with correct and incorrect predictions. Regression parameters from the encoding model reconstructed into brain maps to provide a visual understanding of what the model learned, for concepts consistently associated with correct predictions (top row), and associated with incorrect predictions (bottom row). Maps used in the classification task included voxelwise data, and are thresholded above to show the highest positive (red) and negative (blue) values.}}{figure}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{25}{x25-680003.3.1}{QQ2-25-80}{Prediction of coordinate-based statistical maps using cognitive concepts}}{71}\relax 
+\doTocEntry\tocsubsection{3.3.2}{\csname a:TocLink\endcsname{25}{x25-690003.3.2}{QQ2-25-81}{Comparison of semantic to spatial similarity}}{71}\relax 
+\doTocEntry\toclof{3.3}{\csname a:TocLink\endcsname{25}{x25-690013}{}{\ignorespaces  Comparison of semantic to spatial similarity. Semantic image comparison is correlated with spatial image comparison (pearson score of 0.514 (95\% confidence interval = (0.499,0.53), p-value \textless {} 2.2e-16)) across all pairwise image comparisons. Task and contrast specific RSA scores are included in \href  {https://github.com/vsoch/thesis/blob/master/supplementary/chapter3/supp1_spatial_semantic_rsa_df.csv}{Supplementary data 3.2}.}}{figure}\relax 
+\doTocEntry\toclot{3.1}{\csname a:TocLink\endcsname{25}{x25-690021}{}{\ignorespaces  Relational Similarity Analysis (RSA) using graph similarity metrics for each of the kind of, part of, and combined ("both") relationships to compare pairwise semantic similarity of brain images to spatial similarity (ascos = "Asymmetric network Structure COntext Similarity", lhn = "Leicht-Holme-Newman"}}{table}\relax 
+\doTocEntry\tocsection{3.4}{\csname a:TocLink\endcsname{26}{x26-700003.4}{QQ2-26-84}{Discussion}}{78}\relax 
+\doTocEntry\tocsubsection{3.4.1}{\csname a:TocLink\endcsname{26}{x26-710003.4.1}{QQ2-26-85}{Semantic image comparison in a classification framework}}{78}\relax 
+\doTocEntry\tocsubsection{3.4.2}{\csname a:TocLink\endcsname{26}{x26-720003.4.2}{QQ2-26-86}{Comparison of semantic to spatial similarity}}{78}\relax 
+\doTocEntry\tocsubsection{3.4.3}{\csname a:TocLink\endcsname{26}{x26-730003.4.3}{QQ2-26-87}{Limitations}}{79}\relax 
+\doTocEntry\tocsection{3.5}{\csname a:TocLink\endcsname{27}{x27-740003.5}{QQ2-27-88}{Conclusion}}{81}\relax 
+\doTocEntry\tocchapter{4}{\csname a:TocLink\endcsname{28}{x28-750004}{QQ2-28-89}{Summary and conclusions}}{84}\relax 
+\doTocEntry\tocappendix{A}{\csname a:TocLink\endcsname{29}{x29-76000A}{QQ2-29-90}{Standardizing behavioral experimentation}}{86}\relax 
+\doTocEntry\tocsection{A.1}{\csname a:TocLink\endcsname{30}{x30-77000A.1}{QQ2-30-91}{Experimental definition and capturing of behavior}}{87}\relax 
+\doTocEntry\tocsubsection{A.1.1}{\csname a:TocLink\endcsname{30}{x30-78000A.1.1}{QQ2-30-92}{Modern behavioral experimentation}}{87}\relax 
+\doTocEntry\tocsubsection{A.1.2}{\csname a:TocLink\endcsname{30}{x30-79000A.1.2}{QQ2-30-93}{Open source infrastructure to measure behavior}}{88}\relax 
+\doTocEntry\tocsection{A.2}{\csname a:TocLink\endcsname{31}{x31-80000A.2}{QQ2-31-94}{The Experiment Factory}}{90}\relax 
+\doTocEntry\tocsubsection{A.2.1}{\csname a:TocLink\endcsname{31}{x31-81000A.2.1}{QQ2-31-95}{The Experiment Factory Use Cases}}{90}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{31}{x31-82000A.2.1}{QQ2-31-96}{Deployment of Experiments}}{90}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{31}{x31-83000A.2.1}{QQ2-31-97}{Local Deployment of Experiments}}{91}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{31}{x31-84000A.2.1}{QQ2-31-98}{Deployment of Experiments using Psiturk}}{91}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{31}{x31-85000A.2.1}{QQ2-31-99}{Local Modification of Experiment or Battery}}{91}\relax 
+\doTocEntry\toclot{A.1}{\csname a:TocLink\endcsname{31}{x31-850011}{}{\ignorespaces  The fields required in the standard ``config.json'' for an Experiment Factory Experiment. The definition of files and and a template are essential to validate the function of the experiments. The examples for each field above are limited and not in JSON, full config.json are available for inspection in the experiment folders (\href  {https://github.com/expfactory/expfactory-experiments}{https://github.com/expfactory/expfactory-experiments})}}{table}\relax 
+\doTocEntry\tocsubsection{A.2.2}{\csname a:TocLink\endcsname{31}{x31-86000A.2.2}{QQ2-31-101}{Development of Experiments and Infrastructure}}{95}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{31}{x31-87000A.2.2}{QQ2-31-102}{Experiment Development}}{95}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{31}{x31-88000A.2.2}{QQ2-31-103}{Documentation and Infrastructure Development}}{95}\relax 
+\doTocEntry\tocsection{A.3}{\csname a:TocLink\endcsname{32}{x32-89000A.3}{QQ2-32-104}{The Experiment Factory Infrastructure}}{97}\relax 
+\doTocEntry\toclof{A.1}{\csname a:TocLink\endcsname{32}{x32-890011}{}{\ignorespaces  The Experiment Factory Core includes Experiments, a battery skeleton, and the software, all of which are openly available on Github. Installation of the Experiment Factory tool allows a researcher to run a sequence of experiments on the fly (right panel) or to generate a local folder or virtual machine to deploy experiments to Amazon Mechanical Turk using Psiturk (left panel).}}{figure}\relax 
+\doTocEntry\tocsubsection{A.3.1}{\csname a:TocLink\endcsname{32}{x32-90000A.3.1}{QQ2-32-106}{The Experiment Factory Software}}{100}\relax 
+\doTocEntry\tocsubsection{A.3.2}{\csname a:TocLink\endcsname{32}{x32-91000A.3.2}{QQ2-32-107}{The Experiment Factory Experiments}}{100}\relax 
+\doTocEntry\tocsubsection{A.3.3}{\csname a:TocLink\endcsname{32}{x32-92000A.3.3}{QQ2-32-108}{Experiment Factory Battery}}{101}\relax 
+\doTocEntry\tocsubsection{A.3.4}{\csname a:TocLink\endcsname{32}{x32-93000A.3.4}{QQ2-32-109}{Experiment Factory Docker}}{101}\relax 
+\doTocEntry\toclof{A.2}{\csname a:TocLink\endcsname{32}{x32-930012}{}{\ignorespaces   Expfactory-docker includes the main application container (expfactory), a database for storing application data (postgres), a job queue (redis) and worker (Celery) for running computationally intensive tasks, and a web server (nginx) to serve the application to the web.   }}{figure}\relax 
+\doTocEntry\toclot{A.2}{\csname a:TocLink\endcsname{32}{x32-930022}{}{\ignorespaces  Docker Containers utilized in expfactory-docker to run the \href  {www.expfactory.org}{www.expfactory.org}. The container images are downloaded from the Docker hub. The container image ``expfactory'' corresponds to the expfactory-docker repository, and is built automatically from this source. For a more substantial deployment, the database can be external to the instance (eg, Amazon RDS) with an encrypted connection.}}{table}\relax 
+\doTocEntry\toclot{A.3}{\csname a:TocLink\endcsname{32}{x32-930033}{}{\ignorespaces  Glossary of terms for technical jargon, software, and tool references.}}{table}\relax 
+\doTocEntry\tocsubsection{A.3.5}{\csname a:TocLink\endcsname{32}{x32-94000A.3.5}{QQ2-32-113}{Experiment Factory VM}}{111}\relax 
+\doTocEntry\tocsection{A.4}{\csname a:TocLink\endcsname{33}{x33-95000A.4}{QQ2-33-114}{Design and Implementation Choices}}{112}\relax 
+\doTocEntry\tocsubsection{A.4.1}{\csname a:TocLink\endcsname{33}{x33-96000A.4.1}{QQ2-33-115}{Modular Framework for Open Science}}{112}\relax 
+\doTocEntry\tocsubsection{A.4.2}{\csname a:TocLink\endcsname{33}{x33-97000A.4.2}{QQ2-33-116}{Software testing for the Experiment Factory}}{112}\relax 
+\doTocEntry\tocsubsection{A.4.3}{\csname a:TocLink\endcsname{33}{x33-98000A.4.3}{QQ2-33-117}{The Cognitive Atlas}}{113}\relax 
+\doTocEntry\tocsection{A.5}{\csname a:TocLink\endcsname{34}{x34-99000A.5}{QQ2-34-118}{Discussion}}{114}\relax 
+\doTocEntry\tocsubsection{A.5.1}{\csname a:TocLink\endcsname{34}{x34-100000A.5.1}{QQ2-34-119}{Software Versioning}}{114}\relax 
+\doTocEntry\tocsubsection{A.5.2}{\csname a:TocLink\endcsname{34}{x34-101000A.5.2}{QQ2-34-120}{Ontology Development}}{114}\relax 
+\doTocEntry\tocsubsection{A.5.3}{\csname a:TocLink\endcsname{34}{x34-102000A.5.3}{QQ2-34-121}{Operating Systems and Browsers Supported}}{115}\relax 
+\doTocEntry\tocsubsection{A.5.4}{\csname a:TocLink\endcsname{34}{x34-103000A.5.4}{QQ2-34-122}{Future Development}}{115}\relax 
+\doTocEntry\tocsection{A.6}{\csname a:TocLink\endcsname{35}{x35-104000A.6}{QQ2-35-123}{Conclusion}}{116}\relax 
+\doTocEntry\tocappendix{B}{\csname a:TocLink\endcsname{36}{x36-105000B}{QQ2-36-124}{Visualization Best Practices for Complex Brain Connectivity Data}}{119}\relax 
+\doTocEntry\tocsection{B.1}{\csname a:TocLink\endcsname{37}{x37-106000B.1}{QQ2-37-125}{Introduction}}{120}\relax 
+\doTocEntry\tocsubsection{B.1.1}{\csname a:TocLink\endcsname{37}{x37-107000B.1.1}{QQ2-37-126}{Derivation of the functional connectome}}{121}\relax 
+\doTocEntry\tocsubsection{B.1.2}{\csname a:TocLink\endcsname{37}{x37-108000B.1.2}{QQ2-37-127}{Methods for visualization of a functional connectome}}{121}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{37}{x37-109000B.1.2}{QQ2-37-128}{Traditional orthogonal views}}{122}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{37}{x37-110000B.1.2}{QQ2-37-129}{A jump to graph-based approaches}}{122}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{37}{x37-111000B.1.2}{QQ2-37-130}{Connectivity visualized on three-dimensional brains}}{122}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{37}{x37-112000B.1.2}{QQ2-37-131}{Bundled connections}}{122}\relax 
+\doTocEntry\toclof{B.1}{\csname a:TocLink\endcsname{37}{x37-1120011}{}{\ignorespaces   Functional connectivity visualizations: Trends in functional connectivity visualizations have changed over time, including A) the orthogonal view, showing an axial, coronal, and sagittal slice of a functional map overlayed on an anatomical brain, B: graph based network approaches that model regions as nodes and links as hubs, C) equivalent networks in the context of brain space, D) force directed graphs that represent connectivity with distance, and E) bundling techniques to group clusters of connections.   }}{figure}\relax 
+\doTocEntry\tocsubsection{B.1.3}{\csname a:TocLink\endcsname{37}{x37-113000B.1.3}{QQ2-37-133}{Integration of visualizations with technology and publication standards}}{126}\relax 
+\doTocEntry\tocsection{B.2}{\csname a:TocLink\endcsname{38}{x38-114000B.2}{QQ2-38-134}{Methods}}{127}\relax 
+\doTocEntry\tocsubsection{B.2.1}{\csname a:TocLink\endcsname{38}{x38-115000B.2.1}{QQ2-38-135}{Parcellation and connectivity matrix generation}}{127}\relax 
+\doTocEntry\tocsubsection{B.2.2}{\csname a:TocLink\endcsname{38}{x38-116000B.2.2}{QQ2-38-136}{Interface development}}{127}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{38}{x38-117000B.2.2}{QQ2-38-137}{Web technology}}{127}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{38}{x38-118000B.2.2}{QQ2-38-138}{Visualization Strategy}}{127}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{38}{x38-119000B.2.2}{QQ2-38-139}{Data Filtering}}{128}\relax 
+\doTocEntry\tocsubsection{B.2.3}{\csname a:TocLink\endcsname{38}{x38-120000B.2.3}{QQ2-38-140}{Design choices}}{128}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{38}{x38-121000B.2.3}{QQ2-38-141}{Coloring, thickness, and size}}{128}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{38}{x38-122000B.2.3}{QQ2-38-142}{Dimensionality}}{128}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{38}{x38-123000B.2.3}{QQ2-38-143}{Data Values}}{129}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{38}{x38-124000B.2.3}{QQ2-38-144}{Interface Controls}}{129}\relax 
+\doTocEntry\tocsection{B.3}{\csname a:TocLink\endcsname{39}{x39-125000B.3}{QQ2-39-145}{Discussion}}{130}\relax 
+\doTocEntry\tocsection{B.4}{\csname a:TocLink\endcsname{40}{x40-126000B.4}{QQ2-40-146}{Conclusions}}{131}\relax 
+\doTocEntry\tocappendix{C}{\csname a:TocLink\endcsname{41}{x41-127000C}{QQ2-41-147}{Best Practices for Reproducible Research}}{134}\relax 
+\doTocEntry\tocsection{C.1}{\csname a:TocLink\endcsname{42}{x42-128000C.1}{QQ2-42-148}{The Reproducibility Crisis}}{134}\relax 
+\doTocEntry\tocsubsection{C.1.1}{\csname a:TocLink\endcsname{42}{x42-129000C.1.1}{QQ2-42-149}{The components of a reproducible analysis}}{135}\relax 
+\doTocEntry\tocsubsection{C.1.2}{\csname a:TocLink\endcsname{42}{x42-130000C.1.2}{QQ2-42-150}{Documentation}}{136}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{42}{x42-131000C.1.2}{QQ2-42-151}{Documentation of Code}}{137}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{42}{x42-132000C.1.2}{QQ2-42-152}{Visual Documentation}}{138}\relax 
+\doTocEntry\tocsection{C.2}{\csname a:TocLink\endcsname{43}{x43-133000C.2}{QQ2-43-153}{The Academic Software Developer}}{140}\relax 
+\doTocEntry\tocsubsection{C.2.1}{\csname a:TocLink\endcsname{43}{x43-134000C.2.1}{QQ2-43-154}{Machine Accessibility and Data Structures}}{140}\relax 
+\doTocEntry\tocsubsection{C.2.2}{\csname a:TocLink\endcsname{43}{x43-135000C.2.2}{QQ2-43-155}{Application Programming Interfaces for Neuroimaging Research}}{141}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{43}{x43-136000C.2.2}{QQ2-43-156}{pyneurovault}}{141}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{43}{x43-137000C.2.2}{QQ2-43-157}{cogat-python}}{142}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{43}{x43-138000C.2.2}{QQ2-43-158}{expfactory-analysis}}{142}\relax 
+\doTocEntry\tocsubsection{C.2.3}{\csname a:TocLink\endcsname{43}{x43-139000C.2.3}{QQ2-43-159}{The Vision of the Semantic Web}}{143}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{43}{x43-140000C.2.3}{QQ2-43-160}{The Neuroimaging Data Model (NIDM)}}{143}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{43}{x43-141000C.2.3}{QQ2-43-161}{The NIDM-Viewer}}{144}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{43}{x43-142000C.2.3}{QQ2-43-162}{The NIDM-api}}{147}\relax 
+\doTocEntry\tocsubsection{C.2.4}{\csname a:TocLink\endcsname{43}{x43-143000C.2.4}{QQ2-43-163}{Frontend and Backend Web Frameworks}}{150}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{43}{x43-144000C.2.4}{QQ2-43-164}{Back End Frameworks}}{150}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{43}{x43-145000C.2.4}{QQ2-43-165}{Application Frameworks}}{151}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{43}{x43-146000C.2.4}{QQ2-43-166}{Front End Resources}}{152}\relax 
+\doTocEntry\tocsubsection{C.2.5}{\csname a:TocLink\endcsname{43}{x43-147000C.2.5}{QQ2-43-167}{Development Architecture}}{152}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{43}{x43-148000C.2.5}{QQ2-43-168}{Continuous Integration}}{152}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{43}{x43-149000C.2.5}{QQ2-43-169}{Container-based Architectures}}{153}\relax 
+\doTocEntry\tocsubsection{C.2.6}{\csname a:TocLink\endcsname{43}{x43-150000C.2.6}{QQ2-43-170}{High Performance Computing}}{153}\relax 
+\doTocEntry\tocsubsection{C.2.7}{\csname a:TocLink\endcsname{43}{x43-151000C.2.7}{QQ2-43-171}{Virtual Machines}}{154}\relax 
+\doTocEntry\toclof{C.1}{\csname a:TocLink\endcsname{43}{x43-1510011}{}{\ignorespaces  The MyConnectome virtual machine was a successful strategy to completely reproduce a complicated analysis involving brain imaging, genomics, behavior, and metabolomic data.}}{figure}\relax 
+\doTocEntry\tocsection{C.3}{\csname a:TocLink\endcsname{44}{x44-152000C.3}{QQ2-44-173}{Web Based Tools for Neuroimaging}}{158}\relax 
+\doTocEntry\tocsubsection{C.3.1}{\csname a:TocLink\endcsname{44}{x44-153000C.3.1}{QQ2-44-174}{Visualization}}{158}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{44}{x44-154000C.3.1}{QQ2-44-175}{Pybraincompare}}{158}\relax 
+\doTocEntry\toclof{C.2}{\csname a:TocLink\endcsname{44}{x44-1540012}{}{\ignorespaces  The Pybraincompare Python package renders the interactive search interface to power spatial image comparison in the NeuroVault database.}}{figure}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{44}{x44-155000C.3.1}{QQ2-44-177}{Nifti-drop}}{165}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{44}{x44-156000C.3.1}{QQ2-44-178}{Brain Browser and Niindex}}{165}\relax 
+\doTocEntry\tocsection{C.4}{\csname a:TocLink\endcsname{45}{x45-157000C.4}{QQ2-45-179}{A Future of Reproducible Science}}{167}\relax 
+\par 

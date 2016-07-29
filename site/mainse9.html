@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Discussion</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,index=2,3,next,frames --> 
+<meta name="src" content="main.tex"> 
+<meta name="date" content="2016-07-29 20:29:00"> 
+<link rel="stylesheet" type="text/css" href="main.css"> 
+</head><body 
+>
+   <!--l. 919--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse10.html" >next</a>] [<a 
+href="mainse8.html" >prev</a>] [<a 
+href="mainse8.html#tailmainse8.html" >prev-tail</a>] [<a 
+href="#tailmainse9.html">tail</a>] [<a 
+href="mainch2.html#mainse9.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">2.4   </span> <a 
+ id="x20-430002.4"></a>Discussion</h3>
+<!--l. 921--><p class="noindent" >This work quantitatively assesses the impact of thresholding on performing pairwise image comparison with
+the two similarity metrics, Pearson and Spearman rank correlation coefficients. The results suggest that a
+small amount of thresholding can improve image similarity computations. The Pearson metric using maps
+with both positive and negative values can be used to optimize classification of contrast maps, and
+including maps in the search set that have been thresholded up to Z = +/-3.0 (corresponding to 25% of
+voxels non-empty within a standard brain mask overlapping between two images) ensures minimally 0.90
+accuracy for retrieval of a map of the same contrast. The results suggest that a minimum degree of
+thresholding (Z = +/-1.0) can maximize accuracy of contrasts in a classification framework, and even
+moderate thresholding (Z = +/-2.0) can increase accuracy as compared to comparison of unthresholded
+maps.
+<!--l. 936--><p class="indent" >   In assessing the distributions of Pearson and Spearman scores, including both positive and negative
+values inflate comparison scores for the higher correlations, however the overall distributions have generally
+deflated scores with increasing threshold. This finding is a strength for the applied task of image
+comparison given the case that the highest subset of scores represent &#8220;truly similar&#8221; images. The image
+comparisons with lower correlations are likely driven by noise at small values, and so removing these values
+would deflate the overall score. However, studying these patterns in the distributions did not serve to
+answer the question of how classification accuracy is impacted by such thresholding, a question that is
+answered by an image classification task. In showing that inclusion of positive and negative
+values serves to improve accuracy of contrast classification, I suggest that negative and positive
+activations are both valuable sources of information, regardless of the subtle details about if
+scores are relatively inflated or deflated across our distributions. This improvement in accuracy
+could simply be due to the fact that a comparison is done with twice as many voxels, however
+this hypothesis does not hold true when comparing CCA to single value imputation. CCA, by
+way of being an intersection, included substantially fewer voxels than single value imputation,
+and was consistently more accurate (Figure&#x00A0;<a 
+href="mainse8.html#x19-400023">2.3<!--tex4ht:ref: fig:23 --></a>). Overall, these results support a decision to
+not arbitrarily exclude negative values when performing the task of image comparison. More
+work is needed to study the consistency, or variability, of these deactivations that have been
+sitting quietly in statistical brain maps before any consideration of eliminating them is to be
+done.
+<!--l. 963--><p class="indent" >   In a classification context, the scores themselves are almost irrelevant given that the images of the same
+                                                                                   
+
+                                                                                   
+contrast are returned, however this statement brings up a very basic question, &#8220;What is the quantitative
+language that we should use to compare two images?&#8221; The idea of &#x00A0;&#8220;similar&#8221; is defined on a domain
+outside of the quantitative, namely, deriving maps from subjects performing the same behavioral tasks,
+solely because there is currently no answer to this question. These analyses suggest that images
+thresholded up to Z = +/-3.0 can be used to retrieve a corresponding contrast 9/10 times,
+and further, that images can be thresholded at Z = +/-1.0 to maximize contrast classification
+performance.
+<!--l. 974--><p class="indent" >   Investigation of the worst performing contrast across folds reveals an interesting finding that using a
+Spearman score while including positive values only can increase classification accuracy by ~ 10% (for this
+single image). This particular image, &#8220;0-back body&#8221; from a working memory task, is most commonly
+misclassified as either &#8220;0-back&#8221; or &#8220;body&#8221; from the same task, an error that is likely attributable to the
+subtle differences between these contrasts. In retrospect, these contrasts are redundant. The contrast
+&#8220;0-back body&#8221; is a control condition for a working memory task that requires participants to respond if a
+body stimulus is presented [<span 
+class="ec-lmbx-10">? </span>], and so the contrast &#8220;0-back&#8221; is the generalization of this task over different
+stimulus types, and the contrast &#8220;body&#8221; combines all body conditions (&#8220;0-back&#8221; and &#8220;2-back&#8221;).
+Although these overlapping contrasts might have been eliminated from the classification task,
+they can be used as a case study for comparing two images with subtle differences. In this
+scenario, a strategy that would optimize classification of subtle differences might be used in
+combination with a strategy to optimize global accuracy (across tasks). Further, a finding like
+this questions the distinctness of these contrasts, and utility in deriving both. Finally, the
+inclusion of negative values hindering ability to distinguish between these similar contrasts again
+questions the validity of these &#8220;deactivations&#8221; in the context of highly similar contrasts. An
+investigation of the value-added when including negative values for these highly similar contrasts is
+warranted.
+<!--l. 998--><p class="indent" >   Importantly, the results question two common opinions on thresholding in the neuroscience community.
+First, there is the idea that completely unthresholded maps are generally superior to thresholded images by
+way of providing more data. The results suggest that voxels with very small values (for our dataset between
+Z = 0.0 and Z = +/-1.0) primarily serve as noise, and analyses of unthresholded data may be negatively
+impacted by this noise.
+<!--l. 1006--><p class="indent" >   Second, the results suggest that standard thresholding strategies, namely random field theory (RFT)
+thresholding, may not be optimal for subsequent image comparison because this strategy eliminates
+subthreshold voxels with valuable signal. RFT requires a clusterforming threshold where only
+suprathreshold voxels are considered for further statistical analyses. For example, the popular neuroimaging
+software package FSL [<span 
+class="ec-lmbx-10">? </span>] has a standard setting for a clusterforming threshold of Z = +/-2.3 (p &#x003C; 0.01),
+and the software SPM (Worsley, 2007) uses an even higher threshold of Z = +/-3.1 (p &#x003C; 0.001). To place
+this thresholding strategy in the context of this work, I generated thresholded maps using the FSL
+standard (Z = +/-2.3) for a single subsample, including 47 contrasts for each of groups A and B, and
+                                                                                   
+
+                                                                                   
+compared the number of voxels within a standard brain mask for these maps compared to the optimal
+threshold for this data, Z = +/-1.0 (<a 
+href="https://github.com/vsoch/thesis/blob/master/supplementary/chapter2/supp_data4_voxel_counts_rft_vs_thresh.csv" >Supplementary Data 2.4</a>). I found that a threshold of Z =
++/-2.3 produces maps with on average 28.38% brain coverage (standard deviation = 16.1%),
+corresponding to an average decrease of 38.84% (standard deviation = 11.36%) in the number of
+brain masked voxels as compared to the maximum accuracy threshold of Z = +/-1.0. This
+results in more sparse results, meaning producing maps with fewer voxels. Mapping this result
+into our accuracy space, a threshold of Z = +/-2.3 corresponds with 96.56% classification
+accuracy, or a loss of ~1.86% accuracy for image classification as compared to the optimal. This
+percentage could be meaningful given a large database of images. A higher threshold (such as SPM&#8217;s
+standard of Z = +/-3.1) would result in a bigger loss of information and accuracy for image
+classification.
+<!--l. 1034--><p class="indent" >   I have identified an optimal image comparison strategy in the context of the commonly practiced
+transformation of image thresholding. I did not test other transformations, and so I cannot confidently say
+that using this transformation of an image is the &#8220;best&#8221; strategy. While answering this question
+is outside of the scope of this work, it is a question that is important to address in order to
+have consistent standards for reproducibility, and a common language for both humans and
+machines to understand image comparison. This strategy must be developed by first asking
+researchers what information is important for them to understand about the images (e.g., regional
+or spatial similarity, temporal similarity), what kind of noise is reasonable to expect given
+maps derived in subtly different ways, and then developing a set of standards to capture and
+balance those features. Finally, this work does not claim that there exists a global optimal
+threshold for such classification, but rather that researchers should take heed to identify optimal
+strategies for thresholding their datasets for use in a classification framework. The particular
+threshold values reported in this study likely depend on the quality of the data, the contrast to
+noise ratio, as well as the number of subjects, and thus are not directly applicable to new
+datasets.
+<!--l. 1055--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">2.4.1   </span> <a 
+ id="x20-440002.4.1"></a>Limitations</h4>
+<!--l. 1056--><p class="noindent" >While the initial question behind this work was asking about filtering an image database based on
+thresholding (i.e., &#8220;What are the thresholds that can be included to ensure optimal classification of
+results?&#8221;), another interpretation of this analysis is about image transformations (i.e., &#8220;How far can we
+reduce an image and still get equivalent results?&#8221;). A limitation of this current work is that a more
+substantial set of image transformations were not tested. I also start with the basic assumption that, given
+that most images are unthresholded, and sharing of unthresholded images is the direction that the
+neuroimaging community is moving toward, a researcher would approach this task using an unthresholded
+                                                                                   
+
+                                                                                   
+map as a query image. Fair evaluation of classification accuracy to compare two thresholded maps would
+require a different approach that considers overlap between suprathreshold voxels in the case of small or
+non-existent overlap. Without carefully developed procedure to account for the sparse overlap, I would
+expect the classification accuracy to reduce dramatically. Due to this fact it is recommended to use fully
+unthresholded maps for sharing purposes (for example when uploading to repositories such as
+NeuroVault.org).
+<!--l. 1075--><p class="indent" >   The image retrieval task using a statistical map constrained to an a-priori region of interest is a
+question not addressed by this work. The field of image based retrieval is fairly unexplored in context of
+statistical maps and some transformation of unthresholded maps might improve the classification
+performance. It could be that a transformation that weights voxels in an intelligent way, a binary metric, a
+region-based representation, or another dimensionality reduction algorithm would be optimal toward this
+goal. The use of an intersection mask between an unthresholded image A and thresholded image B
+also makes our metric asymmetric, and a symmetric metric to compare such maps might be
+desired.
+<!--l. 1086--><p class="indent" >   The HCP data represents, at the time of this work, the largest publicly available dataset of single
+subject task data that allows for this analyses, and thus inferences are based on this set of images. These
+data are of higher quality than many other existing datasets, and it would be useful to compare the results
+to other datasets with many tasks across many subjects. These images shared acquisition parameters,
+voxel dimensions, and smoothing, and while it is relatively easy to transform images into a
+common space and size, deviances in our findings can not be predicted for different datasets.
+Finally, these analyses are focused on group statistical maps. Retrieval of contrast images for
+single-subject maps would be much more challenging due to the possibility of large inter-subject
+variability.
+                                                                                   
+
+                                                                                   
+   <!--l. 1099--><div class="crosslinks"><p class="noindent">[<a 
+href="mainse10.html" >next</a>] [<a 
+href="mainse8.html" >prev</a>] [<a 
+href="mainse8.html#tailmainse8.html" >prev-tail</a>] [<a 
+href="mainse9.html" >front</a>] [<a 
+href="mainch2.html#mainse9.html" >up</a>] </p></div>
+<!--l. 1099--><p class="indent" >   <a 
+ id="tailmainse9.html"></a>   
+</body></html> 
