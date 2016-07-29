@@ -35,7 +35,6 @@ You will see the following:
 
       ...
 
-      ight -x 1400 -D 72 -bg Transparent -pp 41:41 main.idv -o main36x.png
       System return: 0
       Entering main.css
       Entering main.tmp
@@ -109,6 +108,7 @@ You will see the following:
 
       Generating HTML, please wait!
       Site generation complete. Push to gh-pages for finished site.
+      Stopping container...
       7e642e3285f7
       Thesis generation finished, look in site folder for output, and add index.html and site folder to github pages!
 
@@ -119,7 +119,7 @@ What is really happening? Here are the basic commands. In a nutshell, we are sta
       CONTAINER_ID=`echo ${CONTAINER_MD5} | cut -c1-12`
       docker exec $CONTAINER_ID python /code/generate.py
 
-This means that the entire generation of the site (and all the software needed to do it) is installed and run in the container, and we get to see and keep the output. Pretty neat!
+This means that the entire generation of the site (and all the software needed to do it) is installed and run in the container, and we get to see and keep the output. If you need to debug or check the command with hdlatex to generate the html, you should look at `site/output.txt`. Pretty neat!
 
 ### Output
 You will see new files in your present working directory, namely an `index.html` that redirects to the main content of your thesis in the `site` folder. In the `site` folder is a simple version of your thesis, in html form, with all the images and links as they should be. Then you simple need to add these files to a github pages branch. If you haven't yet, checkout a new gh-pages branch
@@ -133,6 +133,16 @@ If you're already on it, skip the above, and just add the site files to the gh-p
       git push origin gh-pages
 
 Then, your site should be available at `{{username}}.github.io/thesis`. 
+
+
+### Changing the font
+By default, I chose Source Serif Pro (Google Font) because it was the right combination of readable and elegant, but I would imagine not fitting to the taste of many. If you want to change the font, you can add an additional argument to the function call in [generate.sh](generate.sh):
+
+
+      docker exec $CONTAINER_ID python /code/generate.py "Space Mono"
+
+
+The use of parenthesis is especially important if your font has any spaces, and capitalization must be exactly correct. All choices should be a [Google Font](https://fonts.google.com/). The example above would correspond to the "Roboto" family, and default is sans-serif. To customize the styling, you will need to edit the function `get_font` in the main [generate.py](generate.py).
 
 
 ### Debugging
@@ -155,7 +165,6 @@ By default, the first .tex file found via `glob` is assumed to be the main thesi
  
 In the same way, if you have more than one zip file in your folder, it will select the first. This could also be an argument added to the two generate scripts.
 
-Finally, in my tests I am seeing some of the early sections get generated more than once (eg, a duplicate "Abstract" section). I haven't looked into this yet, and will in the future.
 
 ### Coming Soon
 I am going to add some custom style files to give the thesis a bit of branding, and a bit of... say... style? :) Once mine is submit, I'll add it to the github pages for this repo! Until then.... 
