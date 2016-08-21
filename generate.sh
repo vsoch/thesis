@@ -10,6 +10,7 @@ CONTAINER_ID=`echo ${CONTAINER_MD5} | cut -c1-12`
 docker exec $CONTAINER_ID python /code/generate.py
 
 # stop the container
+echo "Stopping container..."
 docker stop $CONTAINER_ID
 
 echo "Thesis generation finished, look in site folder for output, and add index.html and site folder to github pages!"
