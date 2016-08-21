@@ -1,7 +1,7 @@
 Thesis HTML Generator
 ====================
 
-This simple Dockerfile will take an Overleaf extracted thesis (a zip file with some main.tex file, images, etc.) and use [hdlatex](http://tug.org/tex4ht/) (and [docs](img/guari.pdf)) to render a simple HTML view for reading the thesis. The installation of latex, etc. and the generation of the static files is done via Docker so the user does not need to worry about installing dependencies. The idea is that if you fork the repo, you can then push the files to your gh-pages branch and **wha-la** you have your thesis as a simple website for sharing!
+This simple Dockerfile will take an Overleaf extracted thesis (a zip file with some main.tex file, images, etc.) and use [hdlatex](http://tug.org/tex4ht/) (and [docs](https://github.com/vsoch/thesis/raw/master/img/gurari.pdf)) to render a simple HTML view for reading the thesis. The installation of latex, etc. and the generation of the static files is done via Docker so the user does not need to worry about installing dependencies. The idea is that if you fork the repo, you can then push the files to your gh-pages branch and **wha-la** you have your thesis as a simple website for sharing!
 
 ### Instructions
 
@@ -12,7 +12,7 @@ First, fork the repo to your Github by clicking on the fork button. Then clone t
       
 Next, you need to download your thesis in zip format from Overleaf. They have a nice button to do this:
 
-![overleaf](img/overleaf.png)
+![overleaf](https://github.com/vsoch/thesis/raw/master/img/overleaf.png)
 
 You should plop it in this folder, making sure to delete mine (if I've included it in the repo, I maybe haven't until I properly submit it!). The script will find your thesis based on it having the `.zip` extension. If you don't have a zip file, it's going to get angry at you.
 
@@ -35,7 +35,6 @@ You will see the following:
 
       ...
 
-      ight -x 1400 -D 72 -bg Transparent -pp 41:41 main.idv -o main36x.png
       System return: 0
       Entering main.css
       Entering main.tmp
@@ -109,6 +108,7 @@ You will see the following:
 
       Generating HTML, please wait!
       Site generation complete. Push to gh-pages for finished site.
+      Stopping container...
       7e642e3285f7
       Thesis generation finished, look in site folder for output, and add index.html and site folder to github pages!
 
@@ -119,7 +119,7 @@ What is really happening? Here are the basic commands. In a nutshell, we are sta
       CONTAINER_ID=`echo ${CONTAINER_MD5} | cut -c1-12`
       docker exec $CONTAINER_ID python /code/generate.py
 
-This means that the entire generation of the site (and all the software needed to do it) is installed and run in the container, and we get to see and keep the output. Pretty neat!
+This means that the entire generation of the site (and all the software needed to do it) is installed and run in the container, and we get to see and keep the output. If you need to debug or check the command with hdlatex to generate the html, you should look at `site/output.txt`. Pretty neat!
 
 ### Output
 You will see new files in your present working directory, namely an `index.html` that redirects to the main content of your thesis in the `site` folder. In the `site` folder is a simple version of your thesis, in html form, with all the images and links as they should be. Then you simple need to add these files to a github pages branch. If you haven't yet, checkout a new gh-pages branch
@@ -133,6 +133,16 @@ If you're already on it, skip the above, and just add the site files to the gh-p
       git push origin gh-pages
 
 Then, your site should be available at `{{username}}.github.io/thesis`. 
+
+
+### Changing the font
+By default, I chose Source Serif Pro (Google Font) because it was the right combination of readable and elegant, but I would imagine not fitting to the taste of many. If you want to change the font, you can add an additional argument to the function call in [generate.sh](generate.sh):
+
+
+      docker exec $CONTAINER_ID python /code/generate.py "Space Mono"
+
+
+The use of parenthesis is especially important if your font has any spaces, and capitalization must be exactly correct. All choices should be a [Google Font](https://fonts.google.com/). The example above would correspond to the "Roboto" family, and default is sans-serif. To customize the styling, you will need to edit the function `get_font` in the main [generate.py](generate.py).
 
 
 ### Debugging
@@ -155,7 +165,6 @@ By default, the first .tex file found via `glob` is assumed to be the main thesi
  
 In the same way, if you have more than one zip file in your folder, it will select the first. This could also be an argument added to the two generate scripts.
 
-Finally, in my tests I am seeing some of the early sections get generated more than once (eg, a duplicate "Abstract" section). I haven't looked into this yet, and will in the future.
 
 ### Coming Soon
 I am going to add some custom style files to give the thesis a bit of branding, and a bit of... say... style? :) Once mine is submit, I'll add it to the github pages for this repo! Until then.... 
