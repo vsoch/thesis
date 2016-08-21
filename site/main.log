@@ -1,0 +1,2604 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=latex 2016.7.29)  21 AUG 2016 18:22
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCo
+de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
+{\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\
+documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
+ tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
+\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode html,index=2,next,frames.a.
+b.c.\input  main.tex
+(./main.tex (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/generic/tex4ht/tex4ht.sty
+version 2008-10-27-17:23
+Package: tex4ht 
+--------------------------------------
+--- Note --- for _ at preamble, use the command line option `early_'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ at preamble, use the command line option `early^'
+--------------------------------------
+\tmp:toks=\toks14
+)
+(/usr/share/texmf/tex/generic/tex4ht/usepackage.4ht
+version 2009-05-21-09:32
+)
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2014/10/28 v3.00 enumerate extensions (DPC)
+\@enLab=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen103
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks18
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks19
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2014/09/29 v1.1s fixes to LaTeX
+LaTeX Info: Redefining \em on input line 430.
+LaTeX Info: The control sequence `\[' is already robust on input line 481.
+LaTeX Info: The control sequence `\]' is already robust on input line 482.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen112
+\Hy@linkcounter=\count100
+\Hy@pagecounter=\count101
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count102
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count103
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen113
+\Fld@menulength=\count104
+\Field@Width=\dimen114
+\Fld@charsize=\dimen115
+\Field@toks=\toks23
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count105
+
+
+Package hyperref Message: Stopped early.
+
+)
+
+Package hyperref Message: Driver: htex4ht.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/htex4ht.def
+File: htex4ht.def 2012/11/06 v6.83m Hyperref driver for TeX4ht
+Package hyperref Info: tex4ht is already loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip46
+\LTright=\skip47
+\LTpre=\skip48
+\LTpost=\skip49
+\LTchunksize=\count106
+\LTcapwidth=\dimen116
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count107
+\LT@rows=\count108
+\c@LT@tables=\count109
+\c@LT@chunks=\count110
+\LT@p@ftn=\toks24
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen117
+\lightrulewidth=\dimen118
+\cmidrulewidth=\dimen119
+\belowrulesep=\dimen120
+\belowbottomsep=\dimen121
+\aboverulesep=\dimen122
+\abovetopsep=\dimen123
+\cmidrulesep=\dimen124
+\cmidrulekern=\dimen125
+\defaultaddspace=\dimen126
+\@cmidla=\count111
+\@cmidlb=\count112
+\@aboverulesep=\dimen127
+\@belowrulesep=\dimen128
+\@thisruleclass=\count113
+\@lastruleclass=\count114
+\@thisrulewidth=\dimen129
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 2014/04/23 v3.0j Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen130
+\Gin@req@width=\dimen131
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grffile.sty
+Package: grffile 2012/04/05 v1.16 Extended file name support for graphics (HO)
+Package grffile Info: Option `multidot' is set to `true'.
+Package grffile Info: Option `extendedchars' is set to `false'.
+Package grffile Info: Option `space' is set to `false'.
+Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 486.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2014/04/30 v1.2b Input encoding file
+\inpenc@prehook=\toks25
+\inpenc@posthook=\toks26
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+\MT@toks=\toks27
+\MT@count=\count115
+LaTeX Info: Redefining \textls on input line 766.
+\MT@outer@kern=\dimen132
+LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
+\MT@listname@count=\count116
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip50
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+))
+(./suthesis-2e.sty
+Package: suthesis-2e 2014/05/26
+
+Note that this tries to fulfill the Stanford Thesis requirements but it is unof
+ficial
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+\signaturespace=\skip51
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip52
+\bibsep=\skip53
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count117
+)
+(/usr/share/texmf/tex/generic/tex4ht/tex4ht.4ht
+version 2009-01-07-07:11
+--------------------------------------
+--- Note --- for additional information, use the command line option `info'
+--------------------------------------
+
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (/usr/share/texmf/tex/generic/tex4ht/tex4ht.sty
+version 2008-10-27-17:23
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 137.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2014/04/23 v3.0j Driver-dependant file (DPC,SPQR)
+))
+--- needs --- tex4ht main ---
+\tmp:cnt=\count118
+\openout15 = `main.tmp'.
+
+(./main.tmp)
+\tmp:dim=\skip54
+--------------------------------------
+--- Note --- for XML code, use the command line option `xml' or `xhtml'
+--------------------------------------
+ (./main.xref)
+\:refout=\write3
+\openout3 = `main.xref'.
+
+ (/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- to remove the <?xml version=...?> processing instruction use the c
+ommand line option `no-VERSION'
+--------------------------------------
+--------------------------------------
+--- Note --- to remove the DOCTYPE declaration use the command line option `no-
+DOCTYPE'
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+--------------------------------------
+--- Note --- for marking of the base font, use the command line option `fonts+'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for non active _, use the command line option `no_'
+--------------------------------------
+--------------------------------------
+--- Note --- for _ of catcode 13, use the command line option `_13'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active ^, use the command line option `no^'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ of catcode 13, use the command line option `^13'
+--------------------------------------
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- for alternative charset, use the command line option `charset=...'
+
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS font decoration, use the `NoFonts' command line opti
+on
+--------------------------------------
+--------------------------------------
+--- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for gif bitmaps of pictures, use the `gif' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for file extension name xht, use the command line option `xht'
+--------------------------------------
+TeX4ht package options: html,index=2,next,frames
+--------------------------------------
+--- Note --- to ignore CSS code, use the command line option `-css
+--------------------------------------
+--------------------------------------
+--- Note --- for inline CSS code, use the command line option `css-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for pop ups on mouse over, use the command line option `mouseover'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for addressing images in a subdirectory, use the command line opti
+on `imgdir:.../'
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+\:tokwrite=\toks28
+\:tokpage=\toks29
+--------------------------------------
+--- Note --- for back links to toc, use the command line option `sections+'
+--------------------------------------
+\openout15 = `main.4ct'.
+
+\:tocout=\write4
+\openout4 = `main.4tc'.
+
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/latex.4ht
+version 2009-05-21-09:32
+--------------------------------------
+--- Note --- for links into captions, instead of float heads, use the command l
+ine option `refcaption'
+--------------------------------------
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- For mini tocs immediately aftter the header use the command line o
+ption `minitoc<'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements with valued data, use the command lin
+e option `enumerate+'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements li's with value attributes, use the c
+ommand line option `enumerate-'
+--------------------------------------
+--------------------------------------
+--- Note --- for CSS2 code, use the command line option `css2'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial tabular, use the command line option `pic-tabular'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap fbox'es, use the command line option `pic-fbox'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for inline footnotes use command line option `fn-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for tracing of latex font commands, use the command line option `f
+onts'
+--------------------------------------
+--------------------------------------
+--- Note --- for width specifications of tabular p entries, use the `p-width' c
+ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{ 
+style="width:\HColWidth"}}
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ environments, use the command line option `pic
+-m' (not recommended!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ and $$...$$ environments with latex alt, use t
+he command line option `pic-m+' (not safe!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+))
+(/usr/share/texmf/tex/generic/tex4ht/fontmath.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/report.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- for automatic sectioning pagination, use the command line option `
+1', `2', `3', '4', '5', '6', or '7'
+--------------------------------------
+--------------------------------------
+--- Note --- for files named derived from section titles, use the command line 
+option `sec-filename'
+--------------------------------------
+--------------------------------------
+--- Note --- the number of columns requested by the option `index=2' can be mod
+ified through the command \Configure{IndexColumns}{i}
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/enumerate.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/amssymb.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/amsfonts.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/amsmath.4ht
+version 2009-05-21-09:32
+\tmp:muskip=\muskip12
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/amstext.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/amsbsy.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/amsopn.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/hyperref.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count119
+)
+(/usr/share/texmf/tex/generic/tex4ht/nameref.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+LaTeX Info: Redefining \autoref on input line 99.
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/pd1enc.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/url.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- for URL encoding within href use the command line option `url-enc'
+
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/longtable.4ht
+version 2009-05-21-09:32
+\LT:box=\box32
+\LT:ebox=\box33
+\tmp:bx=\box34
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- for pictorial longtable, use the command line option `pic-longtabl
+e'
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/booktabs.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/graphicx.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/graphics.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- if included graphics are of degraded quality, try the command line
+ options `graphics-num' or `graphics-'. The `num' should provide the density of
+ pixels in the bitmaps (e.g., 110). 
+--------------------------------------
+--------------------------------------
+--- Note --- for key dimensions try the option `Gin-dim'; for key dimensions wh
+en bounding box is unavailable try `Gin-dim+'; neither is recommended
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/dvips.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/inputenc.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/utf8.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/microtype.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/natbib.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/color.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/dvipsnam.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def)
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/th4.4ht
+version 2009-05-21-09:32
+--------------------------------------
+--- Note --- for javascript support, use the command line option `javascript'
+--------------------------------------
+--------------------------------------
+--- Note --- for java support, use the command line option `java'
+--------------------------------------
+--------------------------------------
+--- Note --- for image maps support, use the command line option `image-maps'
+--------------------------------------
+--------------------------------------
+--- Note --- for frames support, use the command line option `frames-' or `fram
+es'
+--------------------------------------
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)) (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 37.
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+\AtBeginShipoutBox=\box35
+Package hyperref Info: Link coloring ON on input line 37.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \microtypecontext on input line 37.
+Package microtype Info: Generating DVI output.
+Package microtype Info: No character protrusion.
+Package microtype Info: No font expansion.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+--- file main.css ---
+--- file main2.html ---
+ (./main.4ct [1
+
+] [2]) [3]
+--- file main3.html ---
+ [1
+
+] [4]
+[5
+
+]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 47.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [6
+
+]
+
+Package natbib Warning: Citation `Samhsa_undated-fo' on page vii undefined on i
+nput line 86.
+
+
+Package natbib Warning: Citation `noauthor_2010-wr' on page vii undefined on in
+put line 86.
+
+
+Package natbib Warning: Citation `american2013diagnostic' on page vii undefined
+ on input line 86.
+
+
+Package natbib Warning: Citation `Cuthbert2013-ks' on page vii undefined on inp
+ut line 86.
+
+
+Package natbib Warning: Citation `Insel2009-vi' on page vii undefined on input 
+line 88.
+
+
+Package natbib Warning: Citation `Morris2012-hx' on page vii undefined on input
+ line 88.
+
+
+Package natbib Warning: Citation `Open_Science_Collaboration2015-hb' on page vi
+i undefined on input line 93.
+
+[7
+
+] [8] [9] [10
+
+] [11] (./main.4ct [12
+
+] [13]) [14] (./main.4ct) [15
+
+] (./main.4ct
+
+Package natbib Warning: Citation `Boubela2015-ap' on page xvi undefined on inpu
+t line 18.
+
+[16
+
+] [17]) [18] [1
+
+]
+Chapter 1.
+
+Package natbib Warning: Citation `noauthor_undated-ou' on page 2 undefined on i
+nput line 147.
+
+
+Package natbib Warning: Citation `Horwitz2012-ci' on page 2 undefined on input 
+line 149.
+
+
+Package natbib Warning: Citation `Fornito2015-rv' on page 2 undefined on input 
+line 149.
+
+
+Package natbib Warning: Citation `McCarroll2013-hi' on page 2 undefined on inpu
+t line 151.
+
+
+Package natbib Warning: Citation `DeWit2000-wh' on page 2 undefined on input li
+ne 154.
+
+
+Package natbib Warning: Citation `Schmidt2007-cs' on page 2 undefined on input 
+line 155.
+
+
+Package natbib Warning: Citation `Broman1999-dq' on page 2 undefined on input l
+ine 156.
+
+
+Package natbib Warning: Citation `Ten_Donkelaar2014-ps' on page 2 undefined on 
+input line 156.
+
+
+Package natbib Warning: Citation `Insel2009-vi' on page 2 undefined on input li
+ne 157.
+
+
+Package natbib Warning: Citation `Etkin2013-lo' on page 2 undefined on input li
+ne 157.
+
+l. 160 Writing main.idv[1] (main0x.png)
+
+Package natbib Warning: Citation `Samhsa_undated-fo' on page 2 undefined on inp
+ut line 160.
+
+
+Package natbib Warning: Citation `american2013diagnostic' on page 2 undefined o
+n input line 160.
+
+
+Package natbib Warning: Citation `Etkin2013-lo' on page 2 undefined on input li
+ne 160.
+
+[2
+
+]
+
+Package natbib Warning: Citation `Etkin2013-lo' on page 3 undefined on input li
+ne 163.
+
+
+Package natbib Warning: Citation `Button2013-ja' on page 3 undefined on input l
+ine 163.
+
+
+Package natbib Warning: Citation `Stodden2014-ca' on page 3 undefined on input 
+line 163.
+
+
+Package natbib Warning: Citation `Boettiger2014-cz' on page 3 undefined on inpu
+t line 163.
+
+
+Package natbib Warning: Citation `noauthor_2014-zc' on page 3 undefined on inpu
+t line 163.
+
+
+Package natbib Warning: Citation `Fera2004-ok' on page 3 undefined on input lin
+e 163.
+
+
+Package natbib Warning: Citation `Barry2013-ng' on page 3 undefined on input li
+ne 163.
+
+
+Package natbib Warning: Citation `Triantafyllou2005-zk' on page 3 undefined on 
+input line 163.
+
+
+Package natbib Warning: Citation `noauthor_undated-nb' on page 3 undefined on i
+nput line 163.
+
+
+Package natbib Warning: Citation `Norris2006-cs' on page 3 undefined on input l
+ine 163.
+
+
+Package natbib Warning: Citation `Turner1998-aj' on page 3 undefined on input l
+ine 163.
+
+
+Package natbib Warning: Citation `Secca2008-dn' on page 3 undefined on input li
+ne 163.
+
+
+Package natbib Warning: Citation `Yang1999' on page 3 undefined on input line 1
+63.
+
+
+Package natbib Warning: Citation `Van_Essen2012-wp' on page 3 undefined on inpu
+t line 163.
+
+
+Package natbib Warning: Citation `Van_Essen2013-fi' on page 3 undefined on inpu
+t line 163.
+
+[3]
+
+Package natbib Warning: Citation `Poldrack2011-jp' on page 4 undefined on input
+ line 186.
+
+
+Package natbib Warning: Citation `Ashburner2000-am' on page 4 undefined on inpu
+t line 192.
+
+[4]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 221.
+
+ (/usr/share/texmf/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 221
+.
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 221.
+
+
+Package natbib Warning: Citation `Lazar2002-dk' on page 5 undefined on input li
+ne 235.
+
+
+Package natbib Warning: Citation `Smith2004-lw' on page 5 undefined on input li
+ne 239.
+
+
+Package natbib Warning: Citation `Costafreda2009-ys' on page 5 undefined on inp
+ut line 241.
+
+[5]
+
+Package natbib Warning: Citation `Talairach1988-os' on page 6 undefined on inpu
+t line 253.
+
+
+Package natbib Warning: Citation `Mazziotta1995-gn' on page 6 undefined on inpu
+t line 255.
+
+
+Package natbib Warning: Citation `Brett2001-gk' on page 6 undefined on input li
+ne 255.
+
+[6] [7
+
+]
+l.262 --- TeX4ht warning --- Cannot determine size of graphic in images/figure1
+1.png (no BoundingBox) ---
+l. 262 --- needs --- images/figure11.png ---
+
+Package natbib Warning: Citation `Boubela2015-ap' on page 8 undefined on input 
+line 264.
+
+[8
+
+]
+
+Package natbib Warning: Citation `Laird2005-gm' on page 9 undefined on input li
+ne 271.
+
+
+Package natbib Warning: Citation `Brown2005-sb' on page 9 undefined on input li
+ne 273.
+
+
+Package natbib Warning: Citation `Eickhoff2012-iw' on page 9 undefined on input
+ line 274.
+
+
+Package natbib Warning: Citation `Yarkoni2011-rg' on page 9 undefined on input 
+line 278.
+
+
+Package natbib Warning: Citation `Pearce1992-nr' on page 9 undefined on input l
+ine 287.
+
+
+Package natbib Warning: Citation `Salimi-Khorshidi2009-if' on page 9 undefined 
+on input line 289.
+
+
+Package natbib Warning: Citation `noauthor_1949-ry' on page 9 undefined on inpu
+t line 289.
+
+
+Package natbib Warning: Citation `Jackson1979-hc' on page 9 undefined on input 
+line 289.
+
+
+Package natbib Warning: Citation `Pearce1992-nr' on page 9 undefined on input l
+ine 291.
+
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 297.
+
+Package natbib Warning: Citation `Salimi-Khorshidi2009-if' on page 9 undefined 
+on input line 310.
+
+[9
+
+]
+
+Package natbib Warning: Citation `Salimi-Khorshidi2009-if' on page 10 undefined
+ on input line 323.
+
+
+Package natbib Warning: Citation `Salimi-Khorshidi2009-if' on page 10 undefined
+ on input line 352.
+
+[10]
+
+Package natbib Warning: Citation `Yarkoni2011-rg' on page 11 undefined on input
+ line 382.
+
+
+Package natbib Warning: Citation `Salimi-Khorshidi2009-if' on page 11 undefined
+ on input line 403.
+
+[11] [12
+
+]
+l.408 --- TeX4ht warning --- Cannot determine size of graphic in images/figure1
+2.jpg (no BoundingBox) ---
+l. 408 --- needs --- images/figure12.jpg ---
+[13
+
+]
+
+Package natbib Warning: Citation `Salimi-Khorshidi2009-if' on page 14 undefined
+ on input line 422.
+
+
+Package natbib Warning: Citation `Gorgolewski2015-gu' on page 14 undefined on i
+nput line 477.
+
+
+Package natbib Warning: Citation `Reid2015-gt' on page 14 undefined on input li
+ne 477.
+
+
+Package natbib Warning: Citation `Hall2012-qo' on page 14 undefined on input li
+ne 478.
+
+
+Package natbib Warning: Citation `Van_Essen2013-fi' on page 14 undefined on inp
+ut line 478.
+
+
+Package natbib Warning: Citation `Book2016-ro' on page 14 undefined on input li
+ne 479.
+
+
+Package natbib Warning: Citation `Landis2016-wo' on page 14 undefined on input 
+line 479.
+
+[14
+
+]
+
+Package natbib Warning: Citation `Sochat2014-wz' on page 15 undefined on input 
+line 516.
+
+[15] [16] [17] [18]
+Chapter 2.
+
+Package natbib Warning: Citation `Sochat2015-qs' on page 19 undefined on input 
+line 612.
+
+
+Package natbib Warning: Citation `Yarkoni2011-rg' on page 19 undefined on input
+ line 625.
+
+
+Package natbib Warning: Citation `Gorgolewski2015-sf' on page 19 undefined on i
+nput line 632.
+
+[19
+
+]
+
+Package natbib Warning: Citation `Van_Essen2013-fi' on page 20 undefined on inp
+ut line 664.
+
+
+Package natbib Warning: Citation `Van_Essen2012-wp' on page 20 undefined on inp
+ut line 664.
+
+
+Package natbib Warning: Citation `Van_Essen2013-fi' on page 20 undefined on inp
+ut line 666.
+
+
+Package natbib Warning: Citation `Hughett2007-ml' on page 20 undefined on input
+ line 708.
+
+[20]
+
+Package natbib Warning: Citation `Taylor1895-sv' on page 21 undefined on input 
+line 715.
+
+
+Package natbib Warning: Citation `Jones2014-ut' on page 21 undefined on input l
+ine 717.
+
+[21] [22]
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 779.
+
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 779.
+
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 779
+.
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 779.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 779.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 779.
+LaTeX Font Info:    Try loading font information for U+msa on input line 779.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 779.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [23] [24
+
+]
+l.794 --- TeX4ht warning --- Cannot determine size of graphic in images/figure2
+1.png (no BoundingBox) ---
+l. 794 --- needs --- images/figure21.png ---
+[25
+
+] [26
+
+] [27
+
+]
+l.831 --- TeX4ht warning --- Cannot determine size of graphic in images/figure2
+2.png (no BoundingBox) ---
+l. 831 --- needs --- images/figure22.png ---
+[28
+
+] [29
+
+] [30
+
+]
+l.839 --- TeX4ht warning --- Cannot determine size of graphic in images/figure2
+3.png (no BoundingBox) ---
+l. 839 --- needs --- images/figure23.png ---
+[31
+
+] [32
+
+] [33
+
+]
+l.875 --- TeX4ht warning --- Cannot determine size of graphic in images/figure2
+4.png (no BoundingBox) ---
+l. 875 --- needs --- images/figure24.png ---
+[34
+
+] [35
+
+] [36
+
+]
+l.902 --- TeX4ht warning --- Cannot determine size of graphic in images/figure2
+5.png (no BoundingBox) ---
+l. 902 --- needs --- images/figure25.png ---
+[37
+
+] [38
+
+]
+
+Package natbib Warning: Citation `Brown2005-sb' on page 39 undefined on input l
+ine 965.
+
+
+Package natbib Warning: Citation `Jenkinson2012-pr' on page 39 undefined on inp
+ut line 995.
+
+[39] [40] [41] [42]
+Chapter 3.
+
+Package natbib Warning: Citation `Gorgolewski2015-gu' on page 43 undefined on i
+nput line 1120.
+
+
+Package natbib Warning: Citation `Van_Essen2013-fi' on page 43 undefined on inp
+ut line 1120.
+
+
+Package natbib Warning: Citation `Hall2012-qo' on page 43 undefined on input li
+ne 1120.
+
+
+Package natbib Warning: Citation `Reid2015-gt' on page 43 undefined on input li
+ne 1120.
+
+
+Package natbib Warning: Citation `Poldrack2011-jp' on page 43 undefined on inpu
+t line 1124.
+
+[43
+
+]
+
+Package natbib Warning: Citation `Vsoch_undated-mq' on page 44 undefined on inp
+ut line 1168.
+
+[44] [45
+
+]
+l.1172 --- TeX4ht warning --- Cannot determine size of graphic in images/figure
+31.png (no BoundingBox) ---
+l. 1172 --- needs --- images/figure31.png ---
+[46
+
+]
+
+Package natbib Warning: Citation `NeuroVault_undated-gr' on page 47 undefined o
+n input line 1203.
+
+
+Package natbib Warning: Citation `Sochat2015-qs' on page 47 undefined on input 
+line 1207.
+
+[47
+
+]
+
+Package natbib Warning: Citation `Vsoch_undated-gw' on page 48 undefined on inp
+ut line 1245.
+
+
+Package natbib Warning: Citation `Mungall2015-yh' on page 48 undefined on input
+ line 1255.
+
+
+Package natbib Warning: Citation `Bissett2012-aq' on page 48 undefined on input
+ line 1270.
+
+
+Package natbib Warning: Citation `Bissett2014-td' on page 48 undefined on input
+ line 1270.
+
+
+Package natbib Warning: Citation `Bissett2011-of' on page 48 undefined on input
+ line 1270.
+
+
+Package natbib Warning: Citation `Bissett2012-yu' on page 48 undefined on input
+ line 1270.
+
+
+Package natbib Warning: Citation `Bissett2013-ep' on page 48 undefined on input
+ line 1270.
+
+
+Package natbib Warning: Citation `Yamaguchi2012-yn' on page 48 undefined on inp
+ut line 1270.
+
+
+Package natbib Warning: Citation `Poldrack2009-ux' on page 48 undefined on inpu
+t line 1270.
+
+
+Package natbib Warning: Citation `Poldrack2011-jp' on page 48 undefined on inpu
+t line 1270.
+
+
+Package natbib Warning: Citation `Lenartowicz2010-bh' on page 48 undefined on i
+nput line 1270.
+
+
+Package natbib Warning: Citation `Tom2007-kx' on page 48 undefined on input lin
+e 1270.
+
+
+Package natbib Warning: Citation `Poldrack1999-cr' on page 48 undefined on inpu
+t line 1270.
+
+
+Package natbib Warning: Citation `noauthor_undated-wy' on page 48 undefined on 
+input line 1283.
+
+
+Package natbib Warning: Citation `Yarkoni2011-rg' on page 48 undefined on input
+ line 1286.
+
+[48] [49] [50]
+
+Package natbib Warning: Citation `Yarkoni2011-rg' on page 51 undefined on input
+ line 1374.
+
+
+Package natbib Warning: Citation `Yarkoni2011-rg' on page 51 undefined on input
+ line 1374.
+
+[51]
+
+Package natbib Warning: Citation `6785743' on page 52 undefined on input line 1
+393.
+
+
+Package natbib Warning: Citation `Salton:1989:ATP:77013' on page 52 undefined o
+n input line 1395.
+
+
+Package natbib Warning: Citation `jaccard' on page 52 undefined on input line 1
+397.
+
+
+Package natbib Warning: Citation `Hanneman_undated-ou' on page 52 undefined on 
+input line 1399.
+
+[52]
+
+Package natbib Warning: Citation `Leicht2005-dv' on page 53 undefined on input 
+line 1401.
+
+
+Package natbib Warning: Citation `10.2307/1932409' on page 53 undefined on inpu
+t line 1403.
+
+
+Package natbib Warning: Citation `Adamic2003-mj' on page 53 undefined on input 
+line 1405.
+
+
+Package natbib Warning: Citation `hagberg-2008-exploring' on page 53 undefined 
+on input line 1408.
+
+
+Package natbib Warning: Citation `Wang2007-nt' on page 53 undefined on input li
+ne 1414.
+
+
+Package natbib Warning: Citation `Mistry2008' on page 53 undefined on input lin
+e 1414.
+
+
+Package natbib Warning: Citation `Eden2009' on page 53 undefined on input line 
+1414.
+
+
+Package natbib Warning: Citation `CognitiveAtlas_undated-hk' on page 53 undefin
+ed on input line 1415.
+
+
+Package natbib Warning: Citation `Wang2007-nt' on page 53 undefined on input li
+ne 1417.
+
+
+Package natbib Warning: Citation `Wang2007-nt' on page 53 undefined on input li
+ne 1427.
+
+[53]
+
+Package natbib Warning: Citation `Sochat2015-qs' on page 54 undefined on input 
+line 1452.
+
+
+Package natbib Warning: Citation `Sochat2015-qs' on page 54 undefined on input 
+line 1458.
+
+[54]
+
+Package natbib Warning: Citation `Kriegeskorte2008-kg' on page 55 undefined on 
+input line 1476.
+
+[55] [56] [57
+
+]
+l.1535 --- TeX4ht warning --- Cannot determine size of graphic in images/figure
+32.png (no BoundingBox) ---
+l. 1535 --- needs --- images/figure32.png ---
+[58
+
+]
+
+Package natbib Warning: Citation `CognitiveAtlas_undated-hk' on page 59 undefin
+ed on input line 1553.
+
+[59
+
+] [60
+
+]
+l.1557 --- TeX4ht warning --- Cannot determine size of graphic in images/figure
+33.png (no BoundingBox) ---
+l. 1557 --- needs --- images/figure33.png ---
+[61
+
+] [62
+
+] [63
+
+] [64
+
+] [65
+
+] [66] [67]
+Chapter 4.
+[68
+
+]
+Appendix A.
+
+Package natbib Warning: Citation `Sochat2016-pu' on page 69 undefined on input 
+line 1727.
+
+
+Package natbib Warning: Citation `Sochat2016-pu' on page 69 undefined on input 
+line 1731.
+
+
+Package natbib Warning: Citation `noauthor_undated-oa' on page 69 undefined on 
+input line 1748.
+
+
+Package natbib Warning: Citation `De_Leeuw2015-zw' on page 69 undefined on inpu
+t line 1770.
+
+
+Package natbib Warning: Citation `McDonnell2012-ns' on page 69 undefined on inp
+ut line 1771.
+
+
+Package natbib Warning: Citation `Mason2011-fz' on page 69 undefined on input l
+ine 1786.
+
+[69
+
+]
+
+Package natbib Warning: Citation `Schneider_W_Eschman_A_and_Zuccolotto_A2012-fe
+' on page 70 undefined on input line 1791.
+
+
+Package natbib Warning: Citation `Brainard1997-rq' on page 70 undefined on inpu
+t line 1791.
+
+
+Package natbib Warning: Citation `Foundation-jqueryorg_undated-ra' on page 70 u
+ndefined on input line 1794.
+
+
+Package natbib Warning: Citation `noauthor_undated-ov' on page 70 undefined on 
+input line 1795.
+
+
+Package natbib Warning: Citation `noauthor_undated-qj' on page 70 undefined on 
+input line 1795.
+
+
+Package natbib Warning: Citation `noauthor_undated-fh' on page 70 undefined on 
+input line 1800.
+
+
+Package natbib Warning: Citation `noauthor_undated-rv' on page 70 undefined on 
+input line 1800.
+
+
+Package natbib Warning: Citation `noauthor_undated-el' on page 70 undefined on 
+input line 1800.
+
+
+Package natbib Warning: Citation `Lange2015-dd' on page 70 undefined on input l
+ine 1811.
+
+
+Package natbib Warning: Citation `noauthor_undated-fd' on page 70 undefined on 
+input line 1812.
+
+
+Package natbib Warning: Citation `McDonnell2012-ns' on page 70 undefined on inp
+ut line 1815.
+
+
+Package natbib Warning: Citation `Makin2016-xi' on page 70 undefined on input l
+ine 1825.
+
+[70]
+
+Package natbib Warning: Citation `Brainard1997-rq' on page 71 undefined on inpu
+t line 1830.
+
+
+Package natbib Warning: Citation `Peirce2007-qr' on page 71 undefined on input 
+line 1831.
+
+
+Package natbib Warning: Citation `De_Leeuw2015-zw' on page 71 undefined on inpu
+t line 1831.
+
+[71] [72] [73] [74
+
+]
+l. 1942 Writing main.idv[2] (main1x.png)
+l. 1943 Writing main.idv[3] (main2x.png)
+l. 1943 Writing main.idv[4] (main3x.png)
+l. 1943 Writing main.idv[5] (main4x.png)
+l. 1944 Writing main.idv[6] (main5x.png)
+l. 1945 Writing main.idv[7] (main6x.png)
+l. 1946 Writing main.idv[8] (main7x.png)
+l. 1946 Writing main.idv[9] (main8x.png)
+l. 1947 Writing main.idv[10] (main9x.png)
+l. 1947 Writing main.idv[11] (main10x.png)
+l. 1948 Writing main.idv[12] (main11x.png)
+l. 1949 Writing main.idv[13] (main12x.png)
+l. 1950 Writing main.idv[14] (main13x.png)
+l. 1951 Writing main.idv[15] (main14x.png)
+l. 1951 Writing main.idv[16] (main15x.png)
+l. 1952 Writing main.idv[17] (main16x.png)
+l. 1952 Writing main.idv[18] (main17x.png)
+ [75
+
+] [76
+
+] [77] [78
+
+]
+l.2033 --- TeX4ht warning --- Cannot determine size of graphic in images/figure
+41.png (no BoundingBox) ---
+l. 2033 --- needs --- images/figure41.png ---
+[79
+
+]
+
+Package natbib Warning: Citation `Poldrack2011-jp' on page 80 undefined on inpu
+t line 2082.
+
+[80
+
+] [81] [82] [83
+
+]
+l.2149 --- TeX4ht warning --- Cannot determine size of graphic in images/figure
+42.png (no BoundingBox) ---
+l. 2149 --- needs --- images/figure42.png ---
+[84
+
+] [85
+
+] [86
+
+]
+l. 2160 Writing main.idv[19] (main18x.png)
+l. 2161 Writing main.idv[20] (main19x.png)
+l. 2164 Writing main.idv[21] (main20x.png)
+ [87
+
+] [88
+
+] [89
+
+]
+l. 2175 Writing main.idv[22] (main21x.png)
+l. 2176 Writing main.idv[23] (main22x.png)
+l. 2177 Writing main.idv[24] (main23x.png)
+l. 2178 Writing main.idv[25] (main24x.png)
+l. 2179 Writing main.idv[26] (main25x.png)
+l. 2180 Writing main.idv[27] (main26x.png)
+l. 2181 Writing main.idv[28] (main27x.png)
+l. 2182 Writing main.idv[29] (main28x.png)
+l. 2183 Writing main.idv[30] (main29x.png)
+l. 2184 Writing main.idv[31] (main30x.png)
+l. 2185 Writing main.idv[32] (main31x.png)
+l. 2186 Writing main.idv[33] (main32x.png)
+l. 2187 Writing main.idv[34] (main33x.png)
+l. 2188 Writing main.idv[35] (main34x.png)
+l. 2189 Writing main.idv[36] (main35x.png)
+ [90
+
+] [91
+
+]
+
+Package natbib Warning: Citation `Poldrack2011-jp' on page 92 undefined on inpu
+t line 2253.
+
+[92] [93] [94]
+Appendix B.
+
+Package natbib Warning: Citation `Sporns2012-fc' on page 95 undefined on input 
+line 2349.
+
+
+Package natbib Warning: Citation `Kelly2012-hi' on page 95 undefined on input l
+ine 2349.
+
+
+Package natbib Warning: Citation `Biswal2010-dm' on page 95 undefined on input 
+line 2349.
+
+
+Package natbib Warning: Citation `Zuo2012-ba' on page 95 undefined on input lin
+e 2349.
+
+
+Package natbib Warning: Citation `Bullmore2009-xh' on page 95 undefined on inpu
+t line 2349.
+
+
+Package natbib Warning: Citation `Rubinov2010-js' on page 95 undefined on input
+ line 2349.
+
+
+Package natbib Warning: Citation `Smith2004-lw' on page 95 undefined on input l
+ine 2349.
+
+
+Package natbib Warning: Citation `Smith2009-rr' on page 95 undefined on input l
+ine 2349.
+
+
+Package natbib Warning: Citation `Strother2006-ts' on page 95 undefined on inpu
+t line 2349.
+
+
+Package natbib Warning: Citation `Smith2004-lw' on page 95 undefined on input l
+ine 2349.
+
+
+Package natbib Warning: Citation `Ashburner1994-vc' on page 95 undefined on inp
+ut line 2349.
+
+
+Package natbib Warning: Citation `Cox1996-rd' on page 95 undefined on input lin
+e 2349.
+
+
+Package natbib Warning: Citation `Bostock2011-ei' on page 95 undefined on input
+ line 2349.
+
+[95
+
+]
+
+Package natbib Warning: Citation `Kim1997-ny' on page 96 undefined on input lin
+e 2354.
+
+
+Package natbib Warning: Citation `Forster1998-ln' on page 96 undefined on input
+ line 2354.
+
+
+Package natbib Warning: Citation `Van_den_Heuvel2008-ob' on page 96 undefined o
+n input line 2354.
+
+
+Package natbib Warning: Citation `Desikan2006-ut' on page 96 undefined on input
+ line 2354.
+
+
+Package natbib Warning: Citation `Evans1994-gq' on page 96 undefined on input l
+ine 2354.
+
+
+Package natbib Warning: Citation `Beckmann2012-ja' on page 96 undefined on inpu
+t line 2354.
+
+
+Package natbib Warning: Citation `McKeown2003-rt' on page 96 undefined on input
+ line 2354.
+
+
+Package natbib Warning: Citation `Damoiseaux2006-wk' on page 96 undefined on in
+put line 2354.
+
+
+Package natbib Warning: Citation `Lindquist2009-ba' on page 96 undefined on inp
+ut line 2354.
+
+[96]
+
+Package natbib Warning: Citation `Gonzalez-Castillo2014-aq' on page 97 undefine
+d on input line 2357.
+
+
+Package natbib Warning: Citation `Chung2013-xk' on page 97 undefined on input l
+ine 2357.
+
+
+Package natbib Warning: Citation `Gorgolewski2015-gu' on page 97 undefined on i
+nput line 2357.
+
+
+Package natbib Warning: Citation `Yarkoni2011-rg' on page 97 undefined on input
+ line 2357.
+
+
+Package natbib Warning: Citation `Laird2005-gm' on page 97 undefined on input l
+ine 2357.
+
+
+Package natbib Warning: Citation `Van_Essen2013-fi' on page 97 undefined on inp
+ut line 2357.
+
+
+Package natbib Warning: Citation `Hall2012-qo' on page 97 undefined on input li
+ne 2357.
+
+
+Package natbib Warning: Citation `Smith2004-lw' on page 97 undefined on input l
+ine 2360.
+
+
+Package natbib Warning: Citation `Cox1996-rd' on page 97 undefined on input lin
+e 2360.
+
+
+Package natbib Warning: Citation `Ashburner1994-vc' on page 97 undefined on inp
+ut line 2360.
+
+
+Package natbib Warning: Citation `Achard2006-kg' on page 97 undefined on input 
+line 2363.
+
+
+Package natbib Warning: Citation `Salvador2005-pm' on page 97 undefined on inpu
+t line 2363.
+
+
+Package natbib Warning: Citation `Salvador2005-pc' on page 97 undefined on inpu
+t line 2363.
+
+[97]
+
+Package natbib Warning: Citation `Worsley_undated-et' on page 98 undefined on i
+nput line 2366.
+
+
+Package natbib Warning: Citation `Foucher2005-vz' on page 98 undefined on input
+ line 2366.
+
+
+Package natbib Warning: Citation `Sebrechts1999-xk' on page 98 undefined on inp
+ut line 2366.
+
+
+Package natbib Warning: Citation `Schinko2014-re' on page 98 undefined on input
+ line 2366.
+
+
+Package natbib Warning: Citation `Achard2006-kg' on page 98 undefined on input 
+line 2369.
+
+
+Package natbib Warning: Citation `Jacomy2014-bl' on page 98 undefined on input 
+line 2369.
+
+
+Package natbib Warning: Citation `Irimia2012-bl' on page 98 undefined on input 
+line 2369.
+
+
+Package natbib Warning: Citation `Zuo2012-ba' on page 98 undefined on input lin
+e 2369.
+
+
+Package natbib Warning: Citation `Van_Horn2012-we' on page 98 undefined on inpu
+t line 2369.
+
+[98] [99
+
+]
+l.2373 --- TeX4ht warning --- Cannot determine size of graphic in images/figure
+62.png (no BoundingBox) ---
+l. 2373 --- needs --- images/figure62.png ---
+[100
+
+]
+
+Package natbib Warning: Citation `Gordon2016-gn' on page 101 undefined on input
+ line 2385.
+
+[101
+
+]
+
+Package natbib Warning: Citation `Bostock2011-ei' on page 102 undefined on inpu
+t line 2389.
+
+
+Package natbib Warning: Citation `Cox1996-rd' on page 102 undefined on input li
+ne 2392.
+
+
+Package natbib Warning: Citation `Cox1996-rd' on page 102 undefined on input li
+ne 2392.
+
+
+Package natbib Warning: Citation `Hyndman1996-ho' on page 102 undefined on inpu
+t line 2395.
+
+[102] [103] [104]
+Appendix C.
+
+Package natbib Warning: Citation `Baker_undated-bx' on page 105 undefined on in
+put line 2436.
+
+
+Package natbib Warning: Citation `Open_Science_Collaboration2015-hb' on page 10
+5 undefined on input line 2436.
+
+
+Package natbib Warning: Citation `Open_Science_Collaboration2012-zr' on page 10
+5 undefined on input line 2436.
+
+
+Package natbib Warning: Citation `Crook2013-fe' on page 105 undefined on input 
+line 2440.
+
+
+Package natbib Warning: Citation `Chirigati2013-qw' on page 105 undefined on in
+put line 2440.
+
+
+Package natbib Warning: Citation `noauthor_2014-zc' on page 105 undefined on in
+put line 2441.
+
+
+Package natbib Warning: Citation `Stodden2014-ca' on page 105 undefined on inpu
+t line 2441.
+
+
+Package natbib Warning: Citation `Wandell2015-yt' on page 105 undefined on inpu
+t line 2441.
+
+
+Package natbib Warning: Citation `Nichols2015-um' on page 105 undefined on inpu
+t line 2442.
+
+
+Package natbib Warning: Citation `Stodden2014-ca' on page 105 undefined on inpu
+t line 2442.
+
+
+Package natbib Warning: Citation `Button2013-ja' on page 105 undefined on input
+ line 2451.
+
+
+Package natbib Warning: Citation `Gorgolewski2015-gu' on page 105 undefined on 
+input line 2454.
+
+
+Package natbib Warning: Citation `Van_Essen2013-fi' on page 105 undefined on in
+put line 2454.
+
+[105
+
+]
+
+Package natbib Warning: Citation `Liou2003-ue' on page 106 undefined on input l
+ine 2485.
+
+
+Package natbib Warning: Citation `Jenkinson2012-pr' on page 106 undefined on in
+put line 2485.
+
+
+Package natbib Warning: Citation `Glatard2015-fn' on page 106 undefined on inpu
+t line 2487.
+
+
+Package natbib Warning: Citation `noauthor_undated-it' on page 106 undefined on
+ input line 2490.
+
+
+Package natbib Warning: Citation `Gorgolewski2015-gu' on page 106 undefined on 
+input line 2493.
+
+[106]
+
+Package natbib Warning: Citation `Zandstra2013-st' on page 107 undefined on inp
+ut line 2548.
+
+[107]
+
+Package natbib Warning: Citation `noauthor_undated-xh' on page 108 undefined on
+ input line 2598.
+
+
+Package natbib Warning: Citation `noauthor_undated-sh' on page 108 undefined on
+ input line 2611.
+
+
+Package natbib Warning: Citation `Feng_Niu_Ce_Zhang_Christopher_Re_Jude_Shavlik
+_undated-fp' on page 108 undefined on input line 2631.
+
+[108] [109]
+
+Package natbib Warning: Citation `Pautasso2014-lr' on page 110 undefined on inp
+ut line 2719.
+
+[110] [111]
+
+Package natbib Warning: Citation `noauthor_undated-by' on page 112 undefined on
+ input line 2784.
+
+
+Package natbib Warning: Citation `noauthor_undated-by' on page 112 undefined on
+ input line 2794.
+
+
+Package natbib Warning: Citation `noauthor_undated-hy' on page 112 undefined on
+ input line 2807.
+
+[112]
+
+Package natbib Warning: Citation `noauthor_undated-pr' on page 113 undefined on
+ input line 2826.
+
+[113] [114] [115
+
+]
+l.2864 --- TeX4ht warning --- Cannot determine size of graphic in images/figure
+51.png (no BoundingBox) ---
+l. 2864 --- needs --- images/figure51.png ---
+[116
+
+]
+
+Package natbib Warning: Citation `noauthor_undated-ia' on page 117 undefined on
+ input line 2893.
+
+[117
+
+] [118
+
+]
+l.2916 --- TeX4ht warning --- Cannot determine size of graphic in images/figure
+52.png (no BoundingBox) ---
+l. 2916 --- needs --- images/figure52.png ---
+[119
+
+]
+
+Package natbib Warning: Citation `Murty2008-xr' on page 120 undefined on input 
+line 2944.
+
+
+Package natbib Warning: Citation `Smith2010-il' on page 120 undefined on input 
+line 2967.
+
+
+Package natbib Warning: Citation `DuBois2008-vl' on page 120 undefined on input
+ line 2967.
+
+
+Package natbib Warning: Citation `Murty2008-xr' on page 120 undefined on input 
+line 2969.
+
+
+Package natbib Warning: Citation `Wheeler2015-nv' on page 120 undefined on inpu
+t line 2969.
+
+
+Package natbib Warning: Citation `noauthor_undated-rk' on page 120 undefined on
+ input line 2971.
+
+
+Package natbib Warning: Citation `noauthor_undated-yg' on page 120 undefined on
+ input line 2972.
+
+
+Package natbib Warning: Citation `noauthor_undated-rq' on page 120 undefined on
+ input line 2974.
+
+[120
+
+]
+
+Package natbib Warning: Citation `noauthor_undated-kz' on page 121 undefined on
+ input line 2988.
+
+
+Package natbib Warning: Citation `noauthor_undated-gm' on page 121 undefined on
+ input line 2998.
+
+
+Package natbib Warning: Citation `noauthor_undated-gm' on page 121 undefined on
+ input line 3000.
+
+
+Package natbib Warning: Citation `noauthor_undated-ia' on page 121 undefined on
+ input line 3004.
+
+
+Package natbib Warning: Citation `noauthor_undated-ej' on page 121 undefined on
+ input line 3004.
+
+
+Package natbib Warning: Citation `Foundation-jqueryorg_undated-ra' on page 121 
+undefined on input line 3005.
+
+
+Package natbib Warning: Citation `noauthor_undated-sj' on page 121 undefined on
+ input line 3011.
+
+
+Package natbib Warning: Citation `noauthor_undated-gd' on page 121 undefined on
+ input line 3014.
+
+[121]
+
+Package natbib Warning: Citation `noauthor_undated-ov' on page 122 undefined on
+ input line 3029.
+
+
+Package natbib Warning: Citation `noauthor_undated-qj' on page 122 undefined on
+ input line 3032.
+
+
+Package natbib Warning: Citation `Foundation-jqueryorg_undated-ra' on page 122 
+undefined on input line 3033.
+
+
+Package natbib Warning: Citation `Foundation-jqueryorg_undated-jc' on page 122 
+undefined on input line 3035.
+
+
+Package natbib Warning: Citation `Gandy_undated-mp' on page 122 undefined on in
+put line 3040.
+
+
+Package natbib Warning: Citation `noauthor_undated-yt' on page 122 undefined on
+ input line 3040.
+
+
+Package natbib Warning: Citation `Mark_Otto_Jacob_Thornton_and_Bootstrap_contri
+butors_undated-is' on page 122 undefined on input line 3040.
+
+
+Package natbib Warning: Citation `noauthor_undated-nz' on page 122 undefined on
+ input line 3083.
+
+
+Package natbib Warning: Citation `noauthor_undated-nm' on page 122 undefined on
+ input line 3083.
+
+[122]
+
+Package natbib Warning: Citation `noauthor_2015-vu' on page 123 undefined on in
+put line 3099.
+
+
+Package natbib Warning: Citation `Boettiger2014-cz' on page 123 undefined on in
+put line 3101.
+
+
+Package natbib Warning: Citation `noauthor_undated-xe' on page 123 undefined on
+ input line 3105.
+
+
+Package natbib Warning: Citation `Vaughan-Nichols2015-sg' on page 123 undefined
+ on input line 3108.
+
+
+Package natbib Warning: Citation `noauthor_undated-lf' on page 123 undefined on
+ input line 3110.
+
+
+Package natbib Warning: Citation `noauthor_undated-im' on page 123 undefined on
+ input line 3114.
+
+
+Package natbib Warning: Citation `noauthor_undated-tu' on page 123 undefined on
+ input line 3119.
+
+
+Package natbib Warning: Citation `noauthor_undated-qg' on page 123 undefined on
+ input line 3121.
+
+
+Package natbib Warning: Citation `noauthor_undated-yd' on page 123 undefined on
+ input line 3121.
+
+
+Package natbib Warning: Citation `Eadline_undated-rs' on page 123 undefined on 
+input line 3128.
+
+
+Package natbib Warning: Citation `noauthor_undated-sd' on page 123 undefined on
+ input line 3130.
+
+[123]
+
+Package natbib Warning: Citation `noauthor_undated-id' on page 124 undefined on
+ input line 3146.
+
+
+Package natbib Warning: Citation `noauthor_undated-tk' on page 124 undefined on
+ input line 3148.
+
+[124] [125
+
+]
+l.3169 --- TeX4ht warning --- Cannot determine size of graphic in images/figure
+53.png (no BoundingBox) ---
+l. 3169 --- needs --- images/figure53.png ---
+[126
+
+] [127
+
+]
+
+Package natbib Warning: Citation `Bostock2011-ei' on page 128 undefined on inpu
+t line 3237.
+
+
+Package natbib Warning: Citation `noauthor_undated-hy' on page 128 undefined on
+ input line 3239.
+
+
+Package natbib Warning: Citation `noauthor_undated-hu' on page 128 undefined on
+ input line 3245.
+
+[128] [129
+
+]
+l.3254 --- TeX4ht warning --- Cannot determine size of graphic in images/figure
+54.png (no BoundingBox) ---
+l. 3254 --- needs --- images/figure54.png ---
+[130
+
+] [131
+
+] [132
+
+]
+l.3269 --- TeX4ht warning --- Cannot determine size of graphic in images/figure
+55.png (no BoundingBox) ---
+l. 3269 --- needs --- images/figure55.png ---
+[133
+
+]
+
+Package natbib Warning: Citation `Mjenkinson2005-hk' on page 134 undefined on i
+nput line 3293.
+
+
+Package natbib Warning: Citation `noauthor_undated-fz' on page 134 undefined on
+ input line 3296.
+
+
+Package natbib Warning: Citation `Foundation_undated-ud' on page 134 undefined 
+on input line 3312.
+
+[134
+
+]
+No file main.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[135]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3362.
+ [136
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3362.
+ (./main.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3362.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3362.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3362.
+ ) 
+Here is how much of TeX's memory you used:
+ 13253 strings out of 495021
+ 181898 string characters out of 6181350
+ 418145 words of memory out of 5000000
+ 16108 multiletter control sequences out of 15000+600000
+ 45550 words of font info for 42 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 37i,14n,44p,3210b,855s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on main.dvi (155 pages, 491024 bytes).
