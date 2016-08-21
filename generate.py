@@ -48,7 +48,6 @@ def clean_content(content):
 def check_install(software="htlatex"):
     '''check_install will attempt to check if software is installed with the which command
     '''    
-  
     cmd = ['which',software]
     install_dir = run_command(cmd,error_message="Cannot find %s. Is it installed?" %(software))
     if install_dir != None:
@@ -69,6 +68,17 @@ def write_file(output_file,content,mode='w'):
     return output_file
 
 
+def read_file(tex_file,mode='r'):
+    '''read_file will read the tex_file and ensure is utf-8
+    :param tex_file: the tex file to read
+    '''
+    filey = open(tex_file,mode)
+    content = filey.readlines()
+    filey.close()
+    content = ''.join(content).decode('utf-8').encode('utf-8')
+    return content
+
+
 def run_command(cmd,error_message=None):
     '''run_command uses subprocess to send a command to the terminal.
     :param cmd: the command to send, should be a list for subprocess
@@ -83,12 +93,9 @@ def run_command(cmd,error_message=None):
                 print(error_message)
         else:
             print(err)
-        return None
-    
+        return None    
     return output
 
-def get_tags():
-    print("WRITEME")
 
 def get_markdown_template(date_str,tags="english"):
     if isinstance(tags,list):
@@ -140,10 +147,14 @@ if len(zips) != 0:
     if len(tex) != 0:
         tex_file = tex[0]
 
+        # ensure all utf-8
+        content = read_file(tex_file)
+        write_file(tex_file,content)
+
         # check for htlatex
         if check_install() == True:
             print_error("Generating HTML, please wait!") 
-            os.system('htlatex %s "html,index=2,3,next,frames"' %(tex_file))
+            os.system('htlatex %s "html,index=2,next,frames"' %(tex_file))
             # Generate index.html for github pages
             output_file = tex_file.replace(".tex",".html")
             index = get_index_template("site/%s" %output_file)   
