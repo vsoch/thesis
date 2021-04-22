@@ -1,5 +1,5 @@
 FROM python:2.7
-MAINTAINER Vanessa Sochat <vsochat@gmail.com>
+MAINTAINER Vanessa Sochat <@vsoch>
 
 RUN apt-get update --fix-missing -qq -y \
   && apt-get install -y \
